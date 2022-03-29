@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.4/dist/css/uikit.min.css" />
+
+		<link rel="stylesheet" href="./assets/styles/style.css" />
+
+		<title>Document</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="uk-container header__container">
+				<div class="uk-flex uk-flex-between uk-flex-middle uk-height-1-1">
+					<div class="header__logo">
+						<a href=""> <img src="./assets/images/logo.svg" alt="" /> </a>
+					</div>
+					<nav class="header__navigation">
+						<ul class="header__navigation__list uk-flex uk-flex-between">
+							<li class="header__navigation__item">
+								<a href="header__navigation__link">Pricing & Services</a>
+							</li>
+							<li class="header__navigation__item">
+								<a href="header__navigation__link">Stylebook</a>
+							</li>
+							<li class="header__navigation__item">
+								<a href="header__navigation__link">Blog</a>
+							</li>
+							<li class="header__navigation__item">
+								<a href="header__navigation__link">Contacts</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header__links uk-flex uk-flex-between uk-flex-middle">
+						<ul class="header__links__social header__social uk-flex uk-flex-between uk-flex-middle">
+							<li class="header__social__item">
+								<a href="" class="header__social__link">
+									<span uk-icon="icon: instagram"></span>
+								</a>
+							</li>
+							<li class="header__social__item">
+								<a href="" class="header__social__link">
+									<span uk-icon="icon: whatsapp"></span>
+								</a>
+							</li>
+							<li class="header__social__item">
+								<a href="" class="header__social__link">
+									<span uk-icon="icon: facebook"></span>
+								</a>
+							</li>
+						</ul>
+						<div class="header__links-login">
+							<a href="/">Log in</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="intro-section">
+				<div class="uk-container">
+					<div class="intro uk-child-width-1-1 uk-child-width-1-2@m" uk-grid>
+						<div class="">
+							<h1>
+								Welcome to <span>Homery</span> <br />
+								Virtual Staging
+							</h1>
+						</div>
+						<div class="">
+							<p>
+								Here you can find different solutions to present your property in the best possible light for potential buyers! Try it now or check
+								more about Virtual Staging.
+							</p>
+							<a href="">Start Project</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section-result">
+				<div class="result">
+					<div uk-slider id="result-slider">
+						<ul class="uk-slider-items uk-child-width-1-1">
+							<li>
+								<div class="item">
+									<div class="uk-container">
+										<div class="result__item uk-child-width-1-1 uk-child-width-1-2@s" uk-grid>
+											<div class="">
+												<div class="image-column">
+													<figure style="background-image: url('/assets/images/unsplash_NvqYkDPE0Rw.png')">
+														<div class="compare" style="background-image: url('/assets/images/unsplash_FV3GConVSss.png')"></div>
+													</figure>
+													<input oninput="beforeAfter()" onchange="beforeAfter()" type="range" min="0" max="100" value="50" class="slider" />
+												</div>
+											</div>
+											<div class="content-column">
+												<h2>Photorealistic result</h2>
+												<p>
+													When working on your real estate photos, we pay great attention to detail to create the most photorealistic effect. Virtual
+													staging technologies allow providing true-to-life results for a shorter time and lower price than traditional staging.
+												</p>
+												<a href="">Start Project</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="item">
+									<div class="uk-container">
+										<div class="result__item uk-child-width-1-1 uk-child-width-1-2@s" uk-grid>
+											<div class="">
+												<div class="image-column">
+													<figure style="background-image: url('/assets/images/unsplash_NvqYkDPE0Rw.png')">
+														<div class="compare" style="background-image: url('/assets/images/unsplash_FV3GConVSss.png')"></div>
+													</figure>
+													<input oninput="beforeAfter()" onchange="beforeAfter()" type="range" min="0" max="100" value="50" class="slider" />
+												</div>
+											</div>
+											<div class="content-column">
+												<h2>Photorealistic result</h2>
+												<p>
+													When working on your real estate photos, we pay great attention to detail to create the most photorealistic effect. Virtual
+													staging technologies allow providing true-to-life results for a shorter time and lower price than traditional staging.
+												</p>
+												<a href="">Start Project</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="item">
+									<div class="uk-container">
+										<div class="result__item uk-child-width-1-1 uk-child-width-1-2@s" uk-grid>
+											<div class="">
+												<div class="image-column">
+													<figure style="background-image: url('/assets/images/unsplash_NvqYkDPE0Rw.png')">
+														<div class="compare" style="background-image: url('/assets/images/unsplash_FV3GConVSss.png')"></div>
+													</figure>
+													<input oninput="beforeAfter()" onchange="beforeAfter()" type="range" min="0" max="100" value="50" class="slider" />
+												</div>
+											</div>
+											<div class="content-column">
+												<h2>Photorealistic result</h2>
+												<p>
+													When working on your real estate photos, we pay great attention to detail to create the most photorealistic effect. Virtual
+													staging technologies allow providing true-to-life results for a shorter time and lower price than traditional staging.
+												</p>
+												<a href="">Start Project</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="uk-container slide-caption">
+						<div class="uk-clild-width-1-1 uk-child-width-1-2@m" uk-grid>
+							<div class="uk-flex uk-flex-between uk-flex-middle">
+								<div class="slide-counter counter"><span class="active-slide"></span> / <span class="number-slides"></span></div>
+								<div class="slide-counter scroll">Drag</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="how-work-section">
+				<div class="uk-container">
+					<div class="how-work" uk-grid>
+						<div class="uk-width-2-5@s uk-width-1-1@s">
+							<h2>How does it work?</h2>
+						</div>
+						<div class="uk-width-3-5@s uk-width-1-1@s">
+							<ul class="how-work__accordion" uk-accordion>
+								<li>
+									<a class="uk-accordion-title" href="#"><span class="accordion__counter"> 01</span> Upload photos</a>
+									<div class="uk-accordion-content">Select the photo you want to work on and upload to the field on our website.</div>
+								</li>
+								<li>
+									<a class="uk-accordion-title" href="#"><span class="accordion__counter">02</span> Describe your photos</a>
+									<div class="uk-accordion-content">Select the photo you want to work on and upload to the field on our website.</div>
+								</li>
+								<li>
+									<a class="uk-accordion-title" href="#"><span class="accordion__counter">03</span> Provide payment</a>
+									<div class="uk-accordion-content">Select the photo you want to work on and upload to the field on our website.</div>
+								</li>
+								<li>
+									<a class="uk-accordion-title" href="#"><span class="accordion__counter">04</span> Provide payment</a>
+									<div class="uk-accordion-content">Select the photo you want to work on and upload to the field on our website.</div>
+								</li>
+								<li>
+									<a class="uk-accordion-title" href="#"> <span class="accordion__counter">05</span> Provide payment</a>
+									<div class="uk-accordion-content">Select the photo you want to work on and upload to the field on our website.</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="testimonials-section">
+				<div class="testimonials">
+					<div class="uk-container">
+						<div uk-grid>
+							<div class="uk-width-2-5@m uk-width-1-1@s">
+								<h2>Testimonials</h2>
+								<p class="subtitle">we work with and proud of</p>
+							</div>
+							<div class="uk-width-3-5@m uk-width-1-1@s">
+								<div class="testimonials__slider" id="tstm-slider" uk-slider>
+									<ul id="tstm-slider-to-controll" class="uk-slider-items uk-child-width-1-1">
+										<li>
+											<div class="uk-grid">
+												<div class="uk-width-2-3@m uk-width-1-1">
+													<div class="item__name">
+														<h3>Emma Hockney</h3>
+														<span>Rieltor from UK</span>
+													</div>
+													<div class="item__phrase">“Hight-quality, quick turnaround, and great communication. Thant you!”</div>
+													<div class="item__date">22 Dec 2021</div>
+													<div class="item__btn">
+														<a href="">View Project</a>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="uk-grid">
+												<div class="uk-width-2-3@m uk-width-1-1">
+													<div class="item__name">
+														<h3>Emma Hockney</h3>
+														<span>Rieltor from UK</span>
+													</div>
+													<div class="item__phrase">“Hight-quality, quick turnaround, and great communication. Thant you!”</div>
+													<div class="item__date">22 Dec 2021</div>
+													<div class="item__btn">
+														<a href="">View Project</a>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="uk-grid">
+												<div class="uk-width-2-3@m uk-width-1-1">
+													<div class="item__name">
+														<h3>Emma Hockney</h3>
+														<span>Rieltor from UK</span>
+													</div>
+													<div class="item__phrase">“Hight-quality, quick turnaround, and great communication. Thant you!”</div>
+													<div class="item__date">22 Dec 2021</div>
+													<div class="item__btn">
+														<a href="">View Project</a>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-container slide-caption">
+						<div class="" uk-grid>
+							<div class="uk-width-2-5@m uk-width-1-1@s"></div>
+							<div class="uk-width-3-5@m uk-width-1-1@s uk-flex uk-flex-between uk-flex-middle">
+								<div class="slide-counter counter"><span class="active-slide"></span> / <span class="number-slides"></span></div>
+								<div class="slide-counter scroll">Drag</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="clients-section">
+				<div class="clients">
+					<div class="uk-container">
+						<div uk-grid>
+							<div class="uk-width-2-5@m uk-width-1-1@s">
+								<h2>Clients</h2>
+								<p class="subtitle">we work with and proud of</p>
+							</div>
+							<div class="uk-width-3-5@m uk-width-1-1@s">
+								<div class="clients__slider" id="clients-slider" uk-slider>
+									<ul id="clients-slider-to-controll" class="uk-slider-items uk-child-width-1-1">
+										<li>
+											<img src="./assets/images/client.png" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/client.png" alt="" />
+										</li>
+										<li>
+											<img src="./assets/images/unsplash_FV3GConVSss.png" alt="" />
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-container slide-caption">
+						<div class="" uk-grid>
+							<div class="uk-width-2-5@m uk-width-1-1@s"></div>
+							<div class="uk-width-3-5@m uk-width-1-1@s uk-flex uk-flex-between uk-flex-middle">
+								<div class="slide-counter counter"><span class="active-slide"></span> / <span class="number-slides"></span></div>
+								<div class="slide-counter scroll">Drag</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="back-to-top-section">
+				<div class="uk-container">
+					<div class="uk-flex uk-flex-center uk-flex-middle">
+						<a class="back_to_top">
+							<span>Back to top</span>
+							<svg width="20" height="25" viewBox="0 0 20 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M10 24.434C10.8161 24.434 11.3937 23.8565 11.3937 23.0278V7.52138L11.2932 4.80933L14.5452 8.43795L17.4079 11.2756C17.659 11.5267 18.0106 11.6899 18.3998 11.6899C19.1657 11.6899 19.7433 11.1123 19.7433 10.3213C19.7433 9.95721 19.6052 9.6182 19.3039 9.31686L11.0296 1.03003C10.7533 0.741246 10.3767 0.590576 10 0.590576C9.61077 0.590576 9.2341 0.741246 8.95787 1.03003L0.696152 9.31686C0.394812 9.6182 0.256699 9.95721 0.256699 10.3213C0.256699 11.1123 0.82171 11.6899 1.58761 11.6899C1.9894 11.6899 2.34096 11.5267 2.59208 11.2756L5.44224 8.43795L8.70675 4.79677L8.59375 7.52138V23.0278C8.59375 23.8565 9.17132 24.434 10 24.434Z"
+									fill="#141414"
+								/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="footer">
+				<div class="uk-container">
+					<div uk-grid>
+						<div class="footer__logo uk-width-2-5@m uk-width-1-2@s uk-width-1-1">
+							<div class="footer__mail">welcome@homeryvirtualstaging.com</div>
+							<a href=""> <img src="./assets/images/logo-light.svg" alt="" /> </a>
+							<div class="footer__copyright" uk-grid><span>©2022 HOMERY. All rights reserved</span></div>
+						</div>
+						<nav class="footer__nav uk-flex uk-flex-right@s uk-flex-center uk-width-2-5@m uk-width-1-2@s uk-width-1-1">
+							<ul class="footer__nav__list">
+								<li><a href="">Pricing & Services</a></li>
+								<li><a href="">Stylebook</a></li>
+								<li><a href="">Blog</a></li>
+								<li><a href="">Contacts</a></li>
+							</ul>
+						</nav>
+						<div class="footer__links uk-flex uk-flex-column uk-width-1-5@m">
+							<ul class="footer__links__social footer__social uk-flex uk-flex-right@m uk-flex-center uk-flex-middle">
+								<li class="footer__social__item">
+									<a href="" class="footer__social__link">
+										<span uk-icon="icon: instagram"></span>
+									</a>
+								</li>
+								<li class="footer__social__item">
+									<a href="" class="footer__social__link">
+										<span uk-icon="icon: whatsapp"></span>
+									</a>
+								</li>
+								<li class="footer__social__item">
+									<a href="" class="footer__social__link">
+										<span uk-icon="icon: facebook"></span>
+									</a>
+								</li>
+							</ul>
+							<ul class="footer__languages uk-flex uk-flex-right@m uk-flex-center uk-flex-middle">
+								<li><a href="" class="active">EN</a></li>
+								<li><a href="">DE</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.slim.js"
+			integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+			crossorigin="anonymous"
+		></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/uikit@3.13.4/dist/js/uikit.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/uikit@3.13.4/dist/js/uikit-icons.min.js"></script>
+		<script></script>
+		<script src="./assets/js/script.js"></script>
+	</body>
+</html>
