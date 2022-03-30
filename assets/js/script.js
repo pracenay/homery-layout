@@ -1,18 +1,8 @@
-const carouselItems = document.querySelectorAll('.uk-slider-items li');
-// console.log(carouselItems);
-function beforeAfter() {
-	carouselItems?.forEach((item) => {
-		if (item.classList.contains('uk-active')) {
-			item.querySelector('.compare').style.width = item.querySelector('.slider').value + '%';
-		}
-	});
-}
-
 const tstmSliderCounter = document.querySelector('.testimonials .counter .active-slide');
 const tstmSliderLength = document.querySelector('.testimonials .counter .number-slides');
 const tstmSlider = document.getElementById('tstm-slider');
 
-tstmSlider.addEventListener('itemshown', function () {
+tstmSlider?.addEventListener('itemshown', function () {
 	let activeIndex = UIkit.getComponent(tstmSlider, 'slider').index + 1;
 	tstmSliderCounter.innerText = activeIndex;
 	let sliderLength = UIkit.getComponent(tstmSlider, 'slider').length;
@@ -23,7 +13,7 @@ const mainSliderCounter = document.querySelector('.result .counter .active-slide
 const mainSliderLength = document.querySelector('.result .counter .number-slides');
 const mainSlider = document.getElementById('result-slider');
 
-mainSlider.addEventListener('itemshown', function () {
+mainSlider?.addEventListener('itemshown', function () {
 	let activeIndex = UIkit.getComponent(mainSlider, 'slider').index + 1;
 	mainSliderCounter.innerText = activeIndex;
 	let sliderLength = UIkit.getComponent(mainSlider, 'slider').length;
@@ -34,7 +24,7 @@ const clientsSliderCounter = document.querySelector('.clients .counter .active-s
 const clientsSliderLength = document.querySelector('.clients .counter .number-slides');
 const clientsSlider = document.getElementById('clients-slider');
 
-clientsSlider.addEventListener('itemshown', function () {
+clientsSlider?.addEventListener('itemshown', function () {
 	let activeIndex = UIkit.getComponent(clientsSlider, 'slider').index + 1;
 	clientsSliderCounter.innerText = activeIndex;
 	let sliderLength = UIkit.getComponent(clientsSlider, 'slider').length;
@@ -50,7 +40,7 @@ function scrollToTop() {
 		behavior: 'smooth',
 	});
 }
-scrollToTopBtn.addEventListener('click', scrollToTop);
+scrollToTopBtn?.addEventListener('click', scrollToTop);
 
 const navBtn = document.querySelector('.burger');
 const mobNav = document.querySelector('.mob-nav__container');
@@ -59,3 +49,25 @@ navBtn.addEventListener('click', () => {
 	mobNav.classList.toggle('active');
 	mobNav.classList.contains('active') ? navBtn.classList.add('fixed') : navBtn.classList.remove('fixed');
 });
+
+const sliders = document.querySelectorAll('.pricing__slider');
+
+sliders.forEach((slider) => {
+	let counter = slider.querySelector('.slide-caption .slide-counter.counter .active-slide');
+	let length = slider.querySelector('.slide-caption .slide-counter.counter .number-slides');
+	slider?.addEventListener('itemshown', function () {
+		let activeIndex = UIkit.getComponent(slider, 'slider').index + 1;
+		counter.innerText = activeIndex;
+		let sliderLength = UIkit.getComponent(slider, 'slider').length;
+		length.innerText = sliderLength;
+	});
+});
+
+const carouselItems = document.querySelectorAll('.uk-slider-items li');
+function beforeAfter() {
+	carouselItems?.forEach((item) => {
+		if (item.classList.contains('uk-active')) {
+			item.querySelector('.compare').style.width = item.querySelector('.slider').value + '%';
+		}
+	});
+}
