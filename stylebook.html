@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.4/dist/css/uikit.min.css" />
+
+		<link rel="stylesheet" href="./assets/styles/style.css" />
+
+		<title>Document</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="uk-container header__container">
+				<div class="uk-flex uk-flex-between uk-flex-middle uk-height-1-1">
+					<div class="header__logo">
+						<a href="/"> <img src="./assets/images/logo.svg" alt="" /> </a>
+					</div>
+					<nav class="header__navigation">
+						<ul class="header__navigation__list uk-flex uk-flex-between">
+							<li class="header__navigation__item">
+								<a href="/pricing.html" class="header__navigation__link">Pricing & Services</a>
+							</li>
+							<li class="header__navigation__item">
+								<a href="/stylebook.html" class="header__navigation__link">Stylebook</a>
+							</li>
+							<li class="header__navigation__item">
+								<a href="header__navigation__link">Blog</a>
+							</li>
+							<li class="header__navigation__item">
+								<a href="header__navigation__link">Contacts</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header__links uk-flex uk-flex-between uk-flex-middle">
+						<ul class="header__links__social header__social uk-flex uk-flex-between uk-flex-middle">
+							<li class="header__social__item">
+								<a href="" class="header__social__link">
+									<span uk-icon="icon: instagram"></span>
+								</a>
+							</li>
+							<li class="header__social__item">
+								<a href="" class="header__social__link">
+									<span uk-icon="icon: whatsapp"></span>
+								</a>
+							</li>
+							<li class="header__social__item">
+								<a href="" class="header__social__link">
+									<span uk-icon="icon: facebook"></span>
+								</a>
+							</li>
+						</ul>
+						<div class="header__links-login">
+							<a href="/">Log in</a>
+						</div>
+					</div>
+					<div class="burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<div class="mob-nav__container">
+				<nav class="mob-nav__navigation">
+					<ul class="mob-nav__navigation__list uk-flex uk-flex-column uk-flex-center uk-flex-middle">
+						<li><a href="/pricing.html">Pricing & Services</a></li>
+						<li><a href="/stylebook.html">Stylebook</a></li>
+						<li><a href="">Blog</a></li>
+						<li><a href="">Contacts</a></li>
+					</ul>
+				</nav>
+				<ul class="social__links uk-flex uk-flex-middle uk-flex-center">
+					<li class="social__item">
+						<a href="" class="social__link">
+							<span uk-icon="icon: instagram"></span>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="" class="social__link">
+							<span uk-icon="icon: whatsapp"></span>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="" class="social__link">
+							<span uk-icon="icon: facebook"></span>
+						</a>
+					</li>
+				</ul>
+				<div class="login__link">
+					<a href="/">Log in</a>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section class="section-stylebook">
+				<div class="uk-container">
+					<h1 class="section-stylebook__title">Stylebook</h1>
+				</div>
+				<div class="custom-slider stylebook">
+					<div class="uk-container">
+						<ul class="custom-slider__list">
+							<li class="custom-slider__list__item">
+								<ul
+									class="uk-flex uk-flex-column slider-switcher uk-child-width-1-2@m uk-child-width-1-1"
+									uk-switcher="swiping:false; animation: uk-animation-fade"
+								>
+									<li class="slider-switcher__item">
+										<a class="uk-flex uk-flex-between" href="#">
+											<span>the name of the project 01</span>
+											<span
+												><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M19.4796 14.1392L19.4671 1.53321C19.4671 0.654299 18.8895 0.0516205 17.9855 0.0516205H5.36691C4.51311 0.0516205 3.92299 0.691967 3.92299 1.44531C3.92299 2.18611 4.56334 2.80134 5.32924 2.80134H9.83678L15.1604 2.62556L12.8753 4.63449L0.959821 16.5625C0.671038 16.8638 0.507812 17.2154 0.507812 17.567C0.507812 18.3078 1.18583 19.0109 1.95173 19.0109C2.30329 19.0109 2.65486 18.8602 2.95619 18.5714L14.8842 6.64342L16.9182 4.35826L16.7048 9.45592V14.1769C16.7048 14.9554 17.32 15.6083 18.0859 15.6083C18.8393 15.6083 19.4796 14.9679 19.4796 14.1392Z"
+														fill="#141414"
+													/></svg
+											></span>
+										</a>
+									</li>
+									<li class="slider-switcher__item">
+										<a class="uk-flex uk-flex-between" href="#">
+											<span>the name of the project 02</span>
+											<span
+												><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M19.4796 14.1392L19.4671 1.53321C19.4671 0.654299 18.8895 0.0516205 17.9855 0.0516205H5.36691C4.51311 0.0516205 3.92299 0.691967 3.92299 1.44531C3.92299 2.18611 4.56334 2.80134 5.32924 2.80134H9.83678L15.1604 2.62556L12.8753 4.63449L0.959821 16.5625C0.671038 16.8638 0.507812 17.2154 0.507812 17.567C0.507812 18.3078 1.18583 19.0109 1.95173 19.0109C2.30329 19.0109 2.65486 18.8602 2.95619 18.5714L14.8842 6.64342L16.9182 4.35826L16.7048 9.45592V14.1769C16.7048 14.9554 17.32 15.6083 18.0859 15.6083C18.8393 15.6083 19.4796 14.9679 19.4796 14.1392Z"
+														fill="#141414"
+													/></svg
+											></span>
+										</a>
+									</li>
+									<li class="slider-switcher__item">
+										<a class="uk-flex uk-flex-between" href="#">
+											<span>the name of the project 03</span>
+											<span
+												><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M19.4796 14.1392L19.4671 1.53321C19.4671 0.654299 18.8895 0.0516205 17.9855 0.0516205H5.36691C4.51311 0.0516205 3.92299 0.691967 3.92299 1.44531C3.92299 2.18611 4.56334 2.80134 5.32924 2.80134H9.83678L15.1604 2.62556L12.8753 4.63449L0.959821 16.5625C0.671038 16.8638 0.507812 17.2154 0.507812 17.567C0.507812 18.3078 1.18583 19.0109 1.95173 19.0109C2.30329 19.0109 2.65486 18.8602 2.95619 18.5714L14.8842 6.64342L16.9182 4.35826L16.7048 9.45592V14.1769C16.7048 14.9554 17.32 15.6083 18.0859 15.6083C18.8393 15.6083 19.4796 14.9679 19.4796 14.1392Z"
+														fill="#141414"
+													/></svg
+											></span>
+										</a>
+									</li>
+								</ul>
+
+								<ul class="uk-switcher uk-margin">
+									<li>
+										<div uk-slider class="custom-slider__slider">
+											<ul class="uk-slider-items uk-child-width-1-1">
+												<li>
+													<div class="item">
+														<div class="uk-container">
+															<div class="custom-slider__item" uk-grid>
+																<div class="uk-width-1-2@s uk-width-1-1">
+																	<div class="content-column uk-height-1-1">
+																		<div class="uk-flex uk-flex-between uk-flex-column uk-height-1-1">
+																			<div class="uk-width-1-1">
+																				<span class="slider-pre-title">for house</span>
+																				<h2 class="slider-title slider-title--dark">KEK1</h2>
+																				<p class="slider-text slider-text--dark">
+																					The coastal style is defined by seaside elements, plants and colors. The sand, driftwood, rope, shells, and
+																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that’s
+																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ...
+																					<span class="read-more">Read more</span>
+																				</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="uk-width-1-2@s uk-width-1-1">
+																	<div class="image-column">
+																		<figure style="background-image: url('/assets/images/unsplash_NvqYkDPE0Rw.png')">
+																			<div class="compare" style="background-image: url('/assets/images/unsplash_FV3GConVSss.png')"></div>
+																		</figure>
+																		<input
+																			oninput="beforeAfter()"
+																			onchange="beforeAfter()"
+																			type="range"
+																			min="0"
+																			max="100"
+																			value="50"
+																			class="slider"
+																		/>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="item">
+														<div class="uk-container">
+															<div class="custom-slider__item" uk-grid>
+																<div class="uk-width-1-2@s uk-width-1-1">
+																	<div class="content-column uk-height-1-1">
+																		<div class="uk-flex uk-flex-between uk-flex-column uk-height-1-1">
+																			<div class="uk-width-1-1">
+																				<span class="slider-pre-title">for house</span>
+																				<h2 class="slider-title slider-title--dark">KEK2</h2>
+																				<p class="slider-text slider-text--dark">
+																					The coastal style is defined by seaside elements, plants and colors. The sand, driftwood, rope, shells, and
+																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that’s
+																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ...
+																					<span class="read-more">Read more</span>
+																				</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="uk-width-1-2@s uk-width-1-1">
+																	<div class="image-column">
+																		<figure style="background-image: url('/assets/images/unsplash_NvqYkDPE0Rw.png')">
+																			<div class="compare" style="background-image: url('/assets/images/unsplash_FV3GConVSss.png')"></div>
+																		</figure>
+																		<input
+																			oninput="beforeAfter()"
+																			onchange="beforeAfter()"
+																			type="range"
+																			min="0"
+																			max="100"
+																			value="50"
+																			class="slider"
+																		/>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<div class="uk-container slide-caption slide-caption--dark">
+												<div uk-grid class="uk-flex-right">
+													<div class="uk-flex uk-flex-between uk-flex-middle uk-width-1-2@s uk-width-1-1">
+														<div class="slide-counter counter"><span class="active-slide"></span> / <span class="number-slides"></span></div>
+														<div class="slide-counter scroll">Drag</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div uk-slider class="custom-slider__slider">
+											<ul class="uk-slider-items uk-child-width-1-1">
+												<li>
+													<div class="item">
+														<div class="uk-container">
+															<div class="custom-slider__item" uk-grid>
+																<div class="uk-width-1-2@s uk-width-1-1">
+																	<div class="content-column uk-height-1-1">
+																		<div class="uk-flex uk-flex-between uk-flex-column uk-height-1-1">
+																			<div class="uk-width-1-1">
+																				<span class="slider-pre-title">for house</span>
+																				<h2 class="slider-title slider-title--dark">LOL1</h2>
+																				<p class="slider-text slider-text--dark">
+																					The coastal style is defined by seaside elements, plants and colors. The sand, driftwood, rope, shells, and
+																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that’s
+																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ...
+																					<span class="read-more">Read more</span>
+																				</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="uk-width-1-2@s uk-width-1-1">
+																	<div class="image-column">
+																		<figure style="background-image: url('/assets/images/unsplash_NvqYkDPE0Rw.png')">
+																			<div class="compare" style="background-image: url('/assets/images/unsplash_FV3GConVSss.png')"></div>
+																		</figure>
+																		<input
+																			oninput="beforeAfter()"
+																			onchange="beforeAfter()"
+																			type="range"
+																			min="0"
+																			max="100"
+																			value="50"
+																			class="slider"
+																		/>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="item">
+														<div class="uk-container">
+															<div class="custom-slider__item" uk-grid>
+																<div class="uk-width-1-2@s uk-width-1-1">
+																	<div class="content-column uk-height-1-1">
+																		<div class="uk-flex uk-flex-between uk-flex-column uk-height-1-1">
+																			<div class="uk-width-1-1">
+																				<span class="slider-pre-title">for house</span>
+																				<h2 class="slider-title slider-title--dark">LOL2</h2>
+																				<p class="slider-text slider-text--dark">
+																					The coastal style is defined by seaside elements, plants and colors. The sand, driftwood, rope, shells, and
+																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that’s
+																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ...
+																					<span class="read-more">Read more</span>
+																				</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="uk-width-1-2@s uk-width-1-1">
+																	<div class="image-column">
+																		<figure style="background-image: url('/assets/images/unsplash_NvqYkDPE0Rw.png')">
+																			<div class="compare" style="background-image: url('/assets/images/unsplash_FV3GConVSss.png')"></div>
+																		</figure>
+																		<input
+																			oninput="beforeAfter()"
+																			onchange="beforeAfter()"
+																			type="range"
+																			min="0"
+																			max="100"
+																			value="50"
+																			class="slider"
+																		/>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<div class="uk-container slide-caption slide-caption--dark">
+												<div uk-grid class="uk-flex-right">
+													<div class="uk-flex uk-flex-between uk-flex-middle uk-width-1-2@s uk-width-1-1">
+														<div class="slide-counter counter"><span class="active-slide"></span> / <span class="number-slides"></span></div>
+														<div class="slide-counter scroll">Drag</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div uk-slider class="custom-slider__slider">
+											<ul class="uk-slider-items uk-child-width-1-1">
+												<li>
+													<div class="item">
+														<div class="uk-container">
+															<div class="custom-slider__item" uk-grid>
+																<div class="uk-width-1-2@s uk-width-1-1">
+																	<div class="content-column uk-height-1-1">
+																		<div class="uk-flex uk-flex-between uk-flex-column uk-height-1-1">
+																			<div class="uk-width-1-1">
+																				<span class="slider-pre-title">for house</span>
+																				<h2 class="slider-title slider-title--dark">Azizazizu1</h2>
+																				<p class="slider-text slider-text--dark">
+																					The coastal style is defined by seaside elements, plants and colors. The sand, driftwood, rope, shells, and
+																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that’s
+																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ...
+																					<span class="read-more">Read more</span>
+																				</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="uk-width-1-2@s uk-width-1-1">
+																	<div class="image-column">
+																		<figure style="background-image: url('/assets/images/unsplash_NvqYkDPE0Rw.png')">
+																			<div class="compare" style="background-image: url('/assets/images/unsplash_FV3GConVSss.png')"></div>
+																		</figure>
+																		<input
+																			oninput="beforeAfter()"
+																			onchange="beforeAfter()"
+																			type="range"
+																			min="0"
+																			max="100"
+																			value="50"
+																			class="slider"
+																		/>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="item">
+														<div class="uk-container">
+															<div class="custom-slider__item" uk-grid>
+																<div class="uk-width-1-2@s uk-width-1-1">
+																	<div class="content-column uk-height-1-1">
+																		<div class="uk-flex uk-flex-between uk-flex-column uk-height-1-1">
+																			<div class="uk-width-1-1">
+																				<span class="slider-pre-title">for house</span>
+																				<h2 class="slider-title slider-title--dark">Azizazizu2</h2>
+																				<p class="slider-text slider-text--dark">
+																					The coastal style is defined by seaside elements, plants and colors. The sand, driftwood, rope, shells, and
+																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that’s
+																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ...
+																					<span class="read-more">Read more</span>
+																				</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="uk-width-1-2@s uk-width-1-1">
+																	<div class="image-column">
+																		<figure style="background-image: url('/assets/images/unsplash_NvqYkDPE0Rw.png')">
+																			<div class="compare" style="background-image: url('/assets/images/unsplash_FV3GConVSss.png')"></div>
+																		</figure>
+																		<input
+																			oninput="beforeAfter()"
+																			onchange="beforeAfter()"
+																			type="range"
+																			min="0"
+																			max="100"
+																			value="50"
+																			class="slider"
+																		/>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<div class="uk-container slide-caption slide-caption--dark">
+												<div uk-grid class="uk-flex-right">
+													<div class="uk-flex uk-flex-between uk-flex-middle uk-width-1-2@s uk-width-1-1">
+														<div class="slide-counter counter"><span class="active-slide"></span> / <span class="number-slides"></span></div>
+														<div class="slide-counter scroll">Drag</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li class="custom-slider__list__item">
+								<ul
+									class="uk-flex uk-flex-column slider-switcher uk-child-width-1-2@m uk-child-width-1-1"
+									uk-switcher="swiping:false; animation: uk-animation-fade"
+								>
+									<li class="slider-switcher__item">
+										<a class="uk-flex uk-flex-between" href="#">
+											<span>the name of the project 01</span>
+											<span
+												><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M19.4796 14.1392L19.4671 1.53321C19.4671 0.654299 18.8895 0.0516205 17.9855 0.0516205H5.36691C4.51311 0.0516205 3.92299 0.691967 3.92299 1.44531C3.92299 2.18611 4.56334 2.80134 5.32924 2.80134H9.83678L15.1604 2.62556L12.8753 4.63449L0.959821 16.5625C0.671038 16.8638 0.507812 17.2154 0.507812 17.567C0.507812 18.3078 1.18583 19.0109 1.95173 19.0109C2.30329 19.0109 2.65486 18.8602 2.95619 18.5714L14.8842 6.64342L16.9182 4.35826L16.7048 9.45592V14.1769C16.7048 14.9554 17.32 15.6083 18.0859 15.6083C18.8393 15.6083 19.4796 14.9679 19.4796 14.1392Z"
+														fill="#141414"
+													/></svg
+											></span>
+										</a>
+									</li>
+									<li class="slider-switcher__item">
+										<a class="uk-flex uk-flex-between" href="#">
+											<span>the name of the project 02</span>
+											<span
+												><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M19.4796 14.1392L19.4671 1.53321C19.4671 0.654299 18.8895 0.0516205 17.9855 0.0516205H5.36691C4.51311 0.0516205 3.92299 0.691967 3.92299 1.44531C3.92299 2.18611 4.56334 2.80134 5.32924 2.80134H9.83678L15.1604 2.62556L12.8753 4.63449L0.959821 16.5625C0.671038 16.8638 0.507812 17.2154 0.507812 17.567C0.507812 18.3078 1.18583 19.0109 1.95173 19.0109C2.30329 19.0109 2.65486 18.8602 2.95619 18.5714L14.8842 6.64342L16.9182 4.35826L16.7048 9.45592V14.1769C16.7048 14.9554 17.32 15.6083 18.0859 15.6083C18.8393 15.6083 19.4796 14.9679 19.4796 14.1392Z"
+														fill="#141414"
+													/></svg
+											></span>
+										</a>
+									</li>
+									<li class="slider-switcher__item">
+										<a class="uk-flex uk-flex-between" href="#">
+											<span>the name of the project 03</span>
+											<span
+												><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M19.4796 14.1392L19.4671 1.53321C19.4671 0.654299 18.8895 0.0516205 17.9855 0.0516205H5.36691C4.51311 0.0516205 3.92299 0.691967 3.92299 1.44531C3.92299 2.18611 4.56334 2.80134 5.32924 2.80134H9.83678L15.1604 2.62556L12.8753 4.63449L0.959821 16.5625C0.671038 16.8638 0.507812 17.2154 0.507812 17.567C0.507812 18.3078 1.18583 19.0109 1.95173 19.0109C2.30329 19.0109 2.65486 18.8602 2.95619 18.5714L14.8842 6.64342L16.9182 4.35826L16.7048 9.45592V14.1769C16.7048 14.9554 17.32 15.6083 18.0859 15.6083C18.8393 15.6083 19.4796 14.9679 19.4796 14.1392Z"
+														fill="#141414"
+													/></svg
+											></span>
+										</a>
+									</li>
+								</ul>
+
+								<ul class="uk-switcher uk-margin">
+									<li>
+										<div uk-slider class="custom-slider__slider">
+											<ul class="uk-slider-items uk-child-width-1-1">
+												<li>
+													<div class="item">
+														<div class="uk-container">
+															<div class="custom-slider__item" uk-grid>
+																<div class="uk-width-1-2@s uk-width-1-1">
+																	<div class="content-column uk-height-1-1">
+																		<div class="uk-flex uk-flex-between uk-flex-column uk-height-1-1">
+																			<div class="uk-width-1-1">
+																				<span class="slider-pre-title">for house</span>
+																				<h2 class="slider-title slider-title--dark">KEK1</h2>
+																				<p class="slider-text slider-text--dark">
+																					The coastal style is defined by seaside elements, plants and colors. The sand, driftwood, rope, shells, and
+																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that’s
+																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ...
+																					<span class="read-more">Read more</span>
+																				</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="uk-width-1-2@s uk-width-1-1">
+																	<div class="image-column">
+																		<figure style="background-image: url('/assets/images/unsplash_NvqYkDPE0Rw.png')">
+																			<div class="compare" style="background-image: url('/assets/images/unsplash_FV3GConVSss.png')"></div>
+																		</figure>
+																		<input
+																			oninput="beforeAfter()"
+																			onchange="beforeAfter()"
+																			type="range"
+																			min="0"
+																			max="100"
+																			value="50"
+																			class="slider"
+																		/>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="item">
+														<div class="uk-container">
+															<div class="custom-slider__item" uk-grid>
+																<div class="uk-width-1-2@s uk-width-1-1">
+																	<div class="content-column uk-height-1-1">
+																		<div class="uk-flex uk-flex-between uk-flex-column uk-height-1-1">
+																			<div class="uk-width-1-1">
+																				<span class="slider-pre-title">for house</span>
+																				<h2 class="slider-title slider-title--dark">KEK2</h2>
+																				<p class="slider-text slider-text--dark">
+																					The coastal style is defined by seaside elements, plants and colors. The sand, driftwood, rope, shells, and
+																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that’s
+																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ...
+																					<span class="read-more">Read more</span>
+																				</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="uk-width-1-2@s uk-width-1-1">
+																	<div class="image-column">
+																		<figure style="background-image: url('/assets/images/unsplash_NvqYkDPE0Rw.png')">
+																			<div class="compare" style="background-image: url('/assets/images/unsplash_FV3GConVSss.png')"></div>
+																		</figure>
+																		<input
+																			oninput="beforeAfter()"
+																			onchange="beforeAfter()"
+																			type="range"
+																			min="0"
+																			max="100"
+																			value="50"
+																			class="slider"
+																		/>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<div class="uk-container slide-caption slide-caption--dark">
+												<div uk-grid class="uk-flex-right">
+													<div class="uk-flex uk-flex-between uk-flex-middle uk-width-1-2@s uk-width-1-1">
+														<div class="slide-counter counter"><span class="active-slide"></span> / <span class="number-slides"></span></div>
+														<div class="slide-counter scroll">Drag</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div uk-slider class="custom-slider__slider">
+											<ul class="uk-slider-items uk-child-width-1-1">
+												<li>
+													<div class="item">
+														<div class="uk-container">
+															<div class="custom-slider__item" uk-grid>
+																<div class="uk-width-1-2@s uk-width-1-1">
+																	<div class="content-column uk-height-1-1">
+																		<div class="uk-flex uk-flex-between uk-flex-column uk-height-1-1">
+																			<div class="uk-width-1-1">
+																				<span class="slider-pre-title">for house</span>
+																				<h2 class="slider-title slider-title--dark">LOL1</h2>
+																				<p class="slider-text slider-text--dark">
+																					The coastal style is defined by seaside elements, plants and colors. The sand, driftwood, rope, shells, and
+																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that’s
+																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ...
+																					<span class="read-more">Read more</span>
+																				</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="uk-width-1-2@s uk-width-1-1">
+																	<div class="image-column">
+																		<figure style="background-image: url('/assets/images/unsplash_NvqYkDPE0Rw.png')">
+																			<div class="compare" style="background-image: url('/assets/images/unsplash_FV3GConVSss.png')"></div>
+																		</figure>
+																		<input
+																			oninput="beforeAfter()"
+																			onchange="beforeAfter()"
+																			type="range"
+																			min="0"
+																			max="100"
+																			value="50"
+																			class="slider"
+																		/>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="item">
+														<div class="uk-container">
+															<div class="custom-slider__item" uk-grid>
+																<div class="uk-width-1-2@s uk-width-1-1">
+																	<div class="content-column uk-height-1-1">
+																		<div class="uk-flex uk-flex-between uk-flex-column uk-height-1-1">
+																			<div class="uk-width-1-1">
+																				<span class="slider-pre-title">for house</span>
+																				<h2 class="slider-title slider-title--dark">LOL2</h2>
+																				<p class="slider-text slider-text--dark">
+																					The coastal style is defined by seaside elements, plants and colors. The sand, driftwood, rope, shells, and
+																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that’s
+																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ...
+																					<span class="read-more">Read more</span>
+																				</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="uk-width-1-2@s uk-width-1-1">
+																	<div class="image-column">
+																		<figure style="background-image: url('/assets/images/unsplash_NvqYkDPE0Rw.png')">
+																			<div class="compare" style="background-image: url('/assets/images/unsplash_FV3GConVSss.png')"></div>
+																		</figure>
+																		<input
+																			oninput="beforeAfter()"
+																			onchange="beforeAfter()"
+																			type="range"
+																			min="0"
+																			max="100"
+																			value="50"
+																			class="slider"
+																		/>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<div class="uk-container slide-caption slide-caption--dark">
+												<div uk-grid class="uk-flex-right">
+													<div class="uk-flex uk-flex-between uk-flex-middle uk-width-1-2@s uk-width-1-1">
+														<div class="slide-counter counter"><span class="active-slide"></span> / <span class="number-slides"></span></div>
+														<div class="slide-counter scroll">Drag</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div uk-slider class="custom-slider__slider">
+											<ul class="uk-slider-items uk-child-width-1-1">
+												<li>
+													<div class="item">
+														<div class="uk-container">
+															<div class="custom-slider__item" uk-grid>
+																<div class="uk-width-1-2@s uk-width-1-1">
+																	<div class="content-column uk-height-1-1">
+																		<div class="uk-flex uk-flex-between uk-flex-column uk-height-1-1">
+																			<div class="uk-width-1-1">
+																				<span class="slider-pre-title">for house</span>
+																				<h2 class="slider-title slider-title--dark">Azizazizu1</h2>
+																				<p class="slider-text slider-text--dark">
+																					The coastal style is defined by seaside elements, plants and colors. The sand, driftwood, rope, shells, and
+																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that’s
+																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ...
+																					<span class="read-more">Read more</span>
+																				</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="uk-width-1-2@s uk-width-1-1">
+																	<div class="image-column">
+																		<figure style="background-image: url('/assets/images/unsplash_NvqYkDPE0Rw.png')">
+																			<div class="compare" style="background-image: url('/assets/images/unsplash_FV3GConVSss.png')"></div>
+																		</figure>
+																		<input
+																			oninput="beforeAfter()"
+																			onchange="beforeAfter()"
+																			type="range"
+																			min="0"
+																			max="100"
+																			value="50"
+																			class="slider"
+																		/>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="item">
+														<div class="uk-container">
+															<div class="custom-slider__item" uk-grid>
+																<div class="uk-width-1-2@s uk-width-1-1">
+																	<div class="content-column uk-height-1-1">
+																		<div class="uk-flex uk-flex-between uk-flex-column uk-height-1-1">
+																			<div class="uk-width-1-1">
+																				<span class="slider-pre-title">for house</span>
+																				<h2 class="slider-title slider-title--dark">Azizazizu2</h2>
+																				<p class="slider-text slider-text--dark">
+																					The coastal style is defined by seaside elements, plants and colors. The sand, driftwood, rope, shells, and
+																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that’s
+																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ...
+																					<span class="read-more">Read more</span>
+																				</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="uk-width-1-2@s uk-width-1-1">
+																	<div class="image-column">
+																		<figure style="background-image: url('/assets/images/unsplash_NvqYkDPE0Rw.png')">
+																			<div class="compare" style="background-image: url('/assets/images/unsplash_FV3GConVSss.png')"></div>
+																		</figure>
+																		<input
+																			oninput="beforeAfter()"
+																			onchange="beforeAfter()"
+																			type="range"
+																			min="0"
+																			max="100"
+																			value="50"
+																			class="slider"
+																		/>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<div class="uk-container slide-caption slide-caption--dark">
+												<div uk-grid class="uk-flex-right">
+													<div class="uk-flex uk-flex-between uk-flex-middle uk-width-1-2@s uk-width-1-1">
+														<div class="slide-counter counter"><span class="active-slide"></span> / <span class="number-slides"></span></div>
+														<div class="slide-counter scroll">Drag</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="back-to-top-section">
+				<div class="uk-container">
+					<div class="uk-flex uk-flex-center uk-flex-middle">
+						<a class="back_to_top">
+							<span>Back to top</span>
+							<svg width="20" height="25" viewBox="0 0 20 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M10 24.434C10.8161 24.434 11.3937 23.8565 11.3937 23.0278V7.52138L11.2932 4.80933L14.5452 8.43795L17.4079 11.2756C17.659 11.5267 18.0106 11.6899 18.3998 11.6899C19.1657 11.6899 19.7433 11.1123 19.7433 10.3213C19.7433 9.95721 19.6052 9.6182 19.3039 9.31686L11.0296 1.03003C10.7533 0.741246 10.3767 0.590576 10 0.590576C9.61077 0.590576 9.2341 0.741246 8.95787 1.03003L0.696152 9.31686C0.394812 9.6182 0.256699 9.95721 0.256699 10.3213C0.256699 11.1123 0.82171 11.6899 1.58761 11.6899C1.9894 11.6899 2.34096 11.5267 2.59208 11.2756L5.44224 8.43795L8.70675 4.79677L8.59375 7.52138V23.0278C8.59375 23.8565 9.17132 24.434 10 24.434Z"
+									fill="#141414"
+								/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="footer">
+				<div class="uk-container">
+					<div uk-grid>
+						<div class="footer__logo uk-width-2-5@m uk-width-1-2@s uk-width-1-1">
+							<div class="footer__mail">welcome@homeryvirtualstaging.com</div>
+							<a href=""> <img src="./assets/images/logo-light.svg" alt="" /> </a>
+							<div class="footer__copyright" uk-grid><span>©2022 HOMERY. All rights reserved</span></div>
+						</div>
+						<nav class="footer__nav uk-flex uk-flex-right@s uk-flex-center uk-width-2-5@m uk-width-1-2@s uk-width-1-1">
+							<ul class="footer__nav__list">
+								<li><a href="/pricing.html">Pricing & Services</a></li>
+								<li><a href="/stylebook.html">Stylebook</a></li>
+								<li><a href="">Blog</a></li>
+								<li><a href="">Contacts</a></li>
+							</ul>
+						</nav>
+						<div class="footer__links uk-flex uk-flex-column uk-width-1-5@m">
+							<ul class="footer__links__social footer__social uk-flex uk-flex-right@m uk-flex-center uk-flex-middle">
+								<li class="footer__social__item">
+									<a href="" class="footer__social__link">
+										<span uk-icon="icon: instagram"></span>
+									</a>
+								</li>
+								<li class="footer__social__item">
+									<a href="" class="footer__social__link">
+										<span uk-icon="icon: whatsapp"></span>
+									</a>
+								</li>
+								<li class="footer__social__item">
+									<a href="" class="footer__social__link">
+										<span uk-icon="icon: facebook"></span>
+									</a>
+								</li>
+							</ul>
+							<ul class="footer__languages uk-flex uk-flex-right@m uk-flex-center uk-flex-middle">
+								<li><a href="" class="active">EN</a></li>
+								<li><a href="">DE</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.slim.js"
+			integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+			crossorigin="anonymous"
+		></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/uikit@3.13.4/dist/js/uikit.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/uikit@3.13.4/dist/js/uikit-icons.min.js"></script>
+		<script src="./assets/js/script.js"></script>
+	</body>
+</html>

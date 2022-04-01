@@ -19,15 +19,15 @@
 			<div class="uk-container header__container">
 				<div class="uk-flex uk-flex-between uk-flex-middle uk-height-1-1">
 					<div class="header__logo">
-						<a href=""> <img src="./assets/images/logo.svg" alt="" /> </a>
+						<a href="/"> <img src="./assets/images/logo.svg" alt="" /> </a>
 					</div>
 					<nav class="header__navigation">
 						<ul class="header__navigation__list uk-flex uk-flex-between">
 							<li class="header__navigation__item">
-								<a href="header__navigation__link">Pricing & Services</a>
+								<a href="/pricing.html" class="header__navigation__link">Pricing & Services</a>
 							</li>
 							<li class="header__navigation__item">
-								<a href="header__navigation__link">Stylebook</a>
+								<a href="/stylebook.html" class="header__navigation__link">Stylebook</a>
 							</li>
 							<li class="header__navigation__item">
 								<a href="header__navigation__link">Blog</a>
@@ -69,8 +69,8 @@
 			<div class="mob-nav__container">
 				<nav class="mob-nav__navigation">
 					<ul class="mob-nav__navigation__list uk-flex uk-flex-column uk-flex-center uk-flex-middle">
-						<li><a href="">Pricing & Services</a></li>
-						<li><a href="">Stylebook</a></li>
+						<li><a href="/pricing.html">Pricing & Services</a></li>
+						<li><a href="/stylebook.html">Stylebook</a></li>
 						<li><a href="">Blog</a></li>
 						<li><a href="">Contacts</a></li>
 					</ul>
@@ -103,16 +103,16 @@
 				<div class="uk-container">
 					<h1 class="section-pricing__title">Pricing & Services</h1>
 				</div>
-				<div class="pricing">
+				<div class="custom-slider pricing">
 					<div class="uk-container">
-						<ul class="pricing__list">
-							<li class="pricing__list__item">
-								<div uk-slider class="pricing__slider">
+						<ul class="custom-slider__list">
+							<li class="custom-slider__list__item">
+								<div uk-slider class="custom-slider__slider">
 									<ul class="uk-slider-items uk-child-width-1-1">
 										<li>
 											<div class="item">
 												<div class="uk-container">
-													<div class="pricing__item" uk-grid>
+													<div class="custom-slider__item" uk-grid>
 														<div class="uk-width-3-5@m uk-width-1-2@s uk-width-1-1">
 															<div class="image-column">
 																<figure style="background-image: url('/assets/images/unsplash_NvqYkDPE0Rw.png')">
@@ -148,7 +148,7 @@
 										<li>
 											<div class="item">
 												<div class="uk-container">
-													<div class="pricing__item" uk-grid>
+													<div class="custom-slider__item" uk-grid>
 														<div class="uk-width-3-5@m uk-width-1-2@s uk-width-1-1">
 															<div class="image-column">
 																<figure style="background-image: url('/assets/images/unsplash_NvqYkDPE0Rw.png')">
@@ -191,13 +191,13 @@
 									</div>
 								</div>
 							</li>
-							<li class="pricing__list__item">
-								<div uk-slider class="pricing__slider">
+							<li class="custom-slider__list__item">
+								<div uk-slider class="custom-slider__slider">
 									<ul class="uk-slider-items uk-child-width-1-1">
 										<li>
 											<div class="item">
 												<div class="uk-container">
-													<div class="pricing__item" uk-grid>
+													<div class="custom-slider__item" uk-grid>
 														<div class="uk-width-3-5@m uk-width-1-2@s uk-width-1-1">
 															<div class="image-column">
 																<figure style="background-image: url('/assets/images/unsplash_NvqYkDPE0Rw.png')">
@@ -233,7 +233,92 @@
 										<li>
 											<div class="item">
 												<div class="uk-container">
-													<div class="pricing__item" uk-grid>
+													<div class="custom-slider__item" uk-grid>
+														<div class="uk-width-3-5@m uk-width-1-2@s uk-width-1-1">
+															<div class="image-column">
+																<figure style="background-image: url('/assets/images/unsplash_NvqYkDPE0Rw.png')">
+																	<div class="compare" style="background-image: url('/assets/images/unsplash_FV3GConVSss.png')"></div>
+																</figure>
+																<input oninput="beforeAfter()" onchange="beforeAfter()" type="range" min="0" max="100" value="50" class="slider" />
+															</div>
+														</div>
+														<div class="uk-width-2-5@m uk-width-1-2@s uk-width-1-1">
+															<div class="content-column uk-height-1-1">
+																<div class="uk-flex uk-flex-between uk-flex-column uk-height-1-1">
+																	<div class="uk-width-1-1 content">
+																		<h2 class="slider-title slider-title--dark">Coastal</h2>
+																		<p class="slider-text slider-text--dark">
+																			The coastal style is defined by seaside elements, plants and colors ...
+																		</p>
+																		<a class="slider-img-link" href="/"><img src="./assets/images/arrow-up-r.svg" alt="" /></a>
+																	</div>
+																	<div class="uk-width-1-1">
+																		<div class="uk-flex uk-flex-middle uk-flex-left@s uk-flex-between price-container">
+																			<span class="slider-price slider--dark">29.50 $</span>
+																			<a class="slider-btn slider-btn--dark" href="">Start Project</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<div class="uk-container slide-caption slide-caption--dark">
+										<div uk-grid>
+											<div class="uk-flex uk-flex-between uk-flex-middle uk-width-3-5@m uk-width-1-2@s uk-width-1-1">
+												<div class="slide-counter counter"><span class="active-slide"></span> / <span class="number-slides"></span></div>
+												<div class="slide-counter scroll">Drag</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="custom-slider__list__item">
+								<div uk-slider class="custom-slider__slider">
+									<ul class="uk-slider-items uk-child-width-1-1">
+										<li>
+											<div class="item">
+												<div class="uk-container">
+													<div class="custom-slider__item" uk-grid>
+														<div class="uk-width-3-5@m uk-width-1-2@s uk-width-1-1">
+															<div class="image-column">
+																<figure style="background-image: url('/assets/images/unsplash_NvqYkDPE0Rw.png')">
+																	<div class="compare" style="background-image: url('/assets/images/unsplash_FV3GConVSss.png')"></div>
+																</figure>
+																<input oninput="beforeAfter()" onchange="beforeAfter()" type="range" min="0" max="100" value="50" class="slider" />
+															</div>
+														</div>
+														<div class="uk-width-2-5@m uk-width-1-2@s uk-width-1-1">
+															<div class="content-column uk-height-1-1">
+																<div class="uk-flex uk-flex-between uk-flex-column uk-height-1-1">
+																	<div class="uk-width-1-1 content">
+																		<h2 class="slider-title slider-title--dark">Coastal</h2>
+																		<p class="slider-text slider-text--dark">
+																			The coastal style is defined by seaside elements, plants and colors ...
+																		</p>
+																		<a class="slider-img-link" href="/"><img src="./assets/images/arrow-up-r.svg" alt="" /></a>
+																	</div>
+																	<div class="uk-width-1-1">
+																		<div class="uk-flex uk-flex-middle uk-flex-left@s uk-flex-between price-container">
+																			<span class="slider-price slider--dark">29.50 $</span>
+																			<a class="slider-btn slider-btn--dark" href="">Start Project</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+
+										<li>
+											<div class="item">
+												<div class="uk-container">
+													<div class="custom-slider__item" uk-grid>
 														<div class="uk-width-3-5@m uk-width-1-2@s uk-width-1-1">
 															<div class="image-column">
 																<figure style="background-image: url('/assets/images/unsplash_NvqYkDPE0Rw.png')">
@@ -307,8 +392,8 @@
 						</div>
 						<nav class="footer__nav uk-flex uk-flex-right@s uk-flex-center uk-width-2-5@m uk-width-1-2@s uk-width-1-1">
 							<ul class="footer__nav__list">
-								<li><a href="">Pricing & Services</a></li>
-								<li><a href="">Stylebook</a></li>
+								<li><a href="/pricing.html">Pricing & Services</a></li>
+								<li><a href="/stylebook.html">Stylebook</a></li>
 								<li><a href="">Blog</a></li>
 								<li><a href="">Contacts</a></li>
 							</ul>

@@ -19,21 +19,21 @@
 			<div class="uk-container header__container">
 				<div class="uk-flex uk-flex-between uk-flex-middle uk-height-1-1">
 					<div class="header__logo">
-						<a href=""> <img src="./assets/images/logo.svg" alt="" /> </a>
+						<a href="/"> <img src="./assets/images/logo.svg" alt="" /> </a>
 					</div>
 					<nav class="header__navigation">
 						<ul class="header__navigation__list uk-flex uk-flex-between">
 							<li class="header__navigation__item">
-								<a href="header__navigation__link">Pricing & Services</a>
+								<a href="/pricing.html" class="header__navigation__link">Pricing & Services</a>
 							</li>
 							<li class="header__navigation__item">
-								<a href="header__navigation__link">Stylebook</a>
+								<a href="/stylebook.html" class="header__navigation__link">Stylebook</a>
 							</li>
 							<li class="header__navigation__item">
-								<a href="header__navigation__link">Blog</a>
+								<a href="/" class="header__navigation__link">Blog</a>
 							</li>
 							<li class="header__navigation__item">
-								<a href="header__navigation__link">Contacts</a>
+								<a href="/" class="header__navigation__link">Contacts</a>
 							</li>
 						</ul>
 					</nav>
@@ -69,8 +69,8 @@
 			<div class="mob-nav__container">
 				<nav class="mob-nav__navigation">
 					<ul class="mob-nav__navigation__list uk-flex uk-flex-column uk-flex-center uk-flex-middle">
-						<li><a href="">Pricing & Services</a></li>
-						<li><a href="">Stylebook</a></li>
+						<li><a href="/pricing.html">Pricing & Services</a></li>
+						<li><a href="/stylebook.html">Stylebook</a></li>
 						<li><a href="">Blog</a></li>
 						<li><a href="">Contacts</a></li>
 					</ul>
@@ -120,7 +120,7 @@
 
 			<section class="section-result">
 				<div class="result">
-					<div uk-slider="autoplay: true; autoplay-interval: 5000; pause-on-hover: true;" id="result-slider">
+					<div uk-slider class="custom-slider__slider">
 						<ul class="uk-slider-items uk-child-width-1-1">
 							<li>
 								<div class="item">
@@ -195,12 +195,12 @@
 								</div>
 							</li>
 						</ul>
-					</div>
-					<div class="uk-container slide-caption">
-						<div class="uk-clild-width-1-1 uk-child-width-1-2@m" uk-grid>
-							<div class="uk-flex uk-flex-between uk-flex-middle">
-								<div class="slide-counter counter"><span class="active-slide"></span> / <span class="number-slides"></span></div>
-								<div class="slide-counter scroll">Drag</div>
+						<div class="uk-container slide-caption slide-caption--light">
+							<div uk-grid class="uk-flex-left">
+								<div class="uk-flex uk-flex-between uk-flex-middle uk-width-1-2@s uk-width-1-1">
+									<div class="slide-counter counter"><span class="active-slide"></span> / <span class="number-slides"></span></div>
+									<div class="slide-counter scroll">Drag</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -249,7 +249,7 @@
 								<p class="subtitle">we work with and proud of</p>
 							</div>
 							<div class="uk-width-3-5@m uk-width-1-1@s">
-								<div class="testimonials__slider" id="tstm-slider" uk-slider>
+								<div class="testimonials__slider custom-slider__slider" uk-slider>
 									<ul id="tstm-slider-to-controll" class="uk-slider-items uk-child-width-1-1">
 										<li>
 											<div class="uk-grid">
@@ -297,16 +297,15 @@
 											</div>
 										</li>
 									</ul>
+									<div class="uk-container slide-caption slide-caption--light">
+										<div uk-grid class="uk-flex-right">
+											<div class="uk-flex uk-flex-between uk-flex-middle uk-width-1-1">
+												<div class="slide-counter counter"><span class="active-slide"></span> / <span class="number-slides"></span></div>
+												<div class="slide-counter scroll">Drag</div>
+											</div>
+										</div>
+									</div>
 								</div>
-							</div>
-						</div>
-					</div>
-					<div class="uk-container slide-caption">
-						<div class="" uk-grid>
-							<div class="uk-width-2-5@m uk-width-1-1@s"></div>
-							<div class="uk-width-3-5@m uk-width-1-1@s uk-flex uk-flex-between uk-flex-middle">
-								<div class="slide-counter counter"><span class="active-slide"></span> / <span class="number-slides"></span></div>
-								<div class="slide-counter scroll">Drag</div>
 							</div>
 						</div>
 					</div>
@@ -322,7 +321,7 @@
 								<p class="subtitle">we work with and proud of</p>
 							</div>
 							<div class="uk-width-3-5@m uk-width-1-1@s">
-								<div class="clients__slider" id="clients-slider" uk-slider>
+								<div class="clients__slider custom-slider__slider" uk-slider>
 									<ul id="clients-slider-to-controll" class="uk-slider-items uk-child-width-1-1">
 										<li>
 											<img src="./assets/images/client.png" alt="" />
@@ -334,16 +333,15 @@
 											<img src="./assets/images/unsplash_FV3GConVSss.png" alt="" />
 										</li>
 									</ul>
+									<div class="uk-container slide-caption slide-caption--dark">
+										<div uk-grid class="uk-flex-right">
+											<div class="uk-flex uk-flex-between uk-flex-middle uk-width-1-1">
+												<div class="slide-counter counter"><span class="active-slide"></span> / <span class="number-slides"></span></div>
+												<div class="slide-counter scroll">Drag</div>
+											</div>
+										</div>
+									</div>
 								</div>
-							</div>
-						</div>
-					</div>
-					<div class="uk-container slide-caption">
-						<div class="" uk-grid>
-							<div class="uk-width-2-5@m uk-width-1-1@s"></div>
-							<div class="uk-width-3-5@m uk-width-1-1@s uk-flex uk-flex-between uk-flex-middle">
-								<div class="slide-counter counter"><span class="active-slide"></span> / <span class="number-slides"></span></div>
-								<div class="slide-counter scroll">Drag</div>
 							</div>
 						</div>
 					</div>
@@ -377,8 +375,8 @@
 						</div>
 						<nav class="footer__nav uk-flex uk-flex-right@s uk-flex-center uk-width-2-5@m uk-width-1-2@s uk-width-1-1">
 							<ul class="footer__nav__list">
-								<li><a href="">Pricing & Services</a></li>
-								<li><a href="">Stylebook</a></li>
+								<li><a href="/pricing.html">Pricing & Services</a></li>
+								<li><a href="/stylebook.html">Stylebook</a></li>
 								<li><a href="">Blog</a></li>
 								<li><a href="">Contacts</a></li>
 							</ul>
