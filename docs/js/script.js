@@ -14,7 +14,6 @@ const mobNav = document.querySelector('.mob-nav__container');
 navBtn.addEventListener('click', () => {
 	navBtn.classList.toggle('open');
 	mobNav.classList.toggle('active');
-	mobNav.classList.contains('active') ? navBtn.classList.add('fixed') : navBtn.classList.remove('fixed');
 });
 
 const sliders = document.querySelectorAll('.custom-slider__slider');

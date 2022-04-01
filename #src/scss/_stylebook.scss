@@ -1,0 +1,14 @@
+.section-stylebook {
+	&__title {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 600;
+		font-size: 48px;
+		line-height: 70px;
+		color: #141414;
+	}
+}
+
+.stylebook .custom-slider__list__item {
+	display: flex;
+	flex-direction: column-reverse;
+}

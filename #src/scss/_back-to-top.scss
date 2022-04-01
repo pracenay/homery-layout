@@ -1,0 +1,32 @@
+.back-to-top-section {
+	padding: 42px 0;
+	a {
+		text-decoration: none;
+		span {
+			position: relative;
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 36px;
+			text-transform: uppercase;
+			color: #141414;
+			text-decoration: none;
+			transition: 0.2s ease;
+		}
+		svg {
+			position: relative;
+			margin-left: 15px;
+			top: -4px;
+			animation: 1s linear infinite alternate top-btn-ani;
+			transform: translateY(0);
+			path {
+				transition: 0.2s ease;
+			}
+		}
+		&:hover span {
+			color: #dd983e;
+		}
+		&:hover svg path {
+			fill: #dd983e;
+		}
+	}
+}

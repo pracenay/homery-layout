@@ -1,0 +1,126 @@
+footer {
+	padding: 40px 0;
+	background: #282828;
+}
+.footer {
+	&__logo {
+		display: flex;
+		flex-direction: column;
+		@media screen and (max-width: 640px) {
+			justify-content: center;
+			align-items: center;
+		}
+		img {
+			margin-top: 16px;
+		}
+	}
+	&__mail {
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 36px;
+		text-transform: uppercase;
+		color: #ffffff;
+		@media screen and (max-width: 450px) {
+			font-size: 12px;
+			line-height: 26px;
+		}
+	}
+	&__copyright {
+		span {
+			margin-top: 40px;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 36px;
+			color: #ffffff;
+			opacity: 0.8;
+			@media screen and (max-width: 450px) {
+				margin-top: 10px;
+			}
+		}
+	}
+	&__nav {
+		&__list {
+			list-style: none;
+			@media screen and (max-width: 640px) {
+				padding-left: 0;
+				text-align: center;
+			}
+			li {
+				margin-bottom: 4px;
+				a {
+					font-weight: 600;
+					font-size: 14px;
+					line-height: 17px;
+					text-transform: uppercase;
+					color: #ffffff;
+					text-decoration: none;
+					transition: 0.2s ease;
+					&:hover {
+						color: #dd983e;
+					}
+				}
+			}
+		}
+	}
+	&__links {
+		@media screen and (max-width: 960px) {
+			flex-direction: row;
+			justify-content: space-between;
+			padding-left: 0;
+		}
+	}
+	&__social {
+		@media screen and (max-width: 960px) {
+			margin-bottom: 0;
+		}
+
+		list-style-type: none;
+		&__item {
+			margin-left: 12px;
+			@media screen and (max-width: 960px) {
+				margin-left: 0;
+				margin-right: 16px;
+			}
+		}
+		&__link {
+			svg path {
+				color: #fff;
+				transition: 0.2s ease;
+			}
+			&:hover svg path {
+				color: #dd983e;
+			}
+		}
+	}
+	&__languages {
+		list-style-type: none;
+		margin-top: 22px;
+		@media screen and (max-width: 960px) {
+			margin-top: 0;
+		}
+
+		li {
+			margin-left: 16px;
+
+			@media screen and (max-width: 640px) {
+				margin: 0 8px;
+			}
+			a {
+				font-weight: 600;
+				font-size: 14px;
+				line-height: 17px;
+				text-transform: uppercase;
+				text-decoration: none;
+				color: #ffffff;
+				opacity: 0.6;
+				transition: 0.2s ease;
+				&.active {
+					opacity: 1;
+				}
+				&:hover {
+					color: #dd983e;
+				}
+			}
+		}
+	}
+}
