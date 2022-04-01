@@ -17,10 +17,8 @@ navBtn.addEventListener('click', () => {
 });
 
 const sliders = document.querySelectorAll('.custom-slider__slider');
-console.log(sliders);
 sliders.forEach((slider) => {
 	let counter = slider.querySelector('.slide-caption .slide-counter.counter .active-slide');
-	console.log(counter);
 	let length = slider.querySelector('.slide-caption .slide-counter.counter .number-slides');
 	slider?.addEventListener('itemshown', function () {
 		let activeIndex = UIkit.getComponent(slider, 'slider').index + 1;
@@ -28,13 +26,15 @@ sliders.forEach((slider) => {
 		let sliderLength = UIkit.getComponent(slider, 'slider').length;
 		length.innerText = sliderLength;
 	});
-});
+	const viewers = document.querySelectorAll('.compare-images');
 
-const carouselItems = document.querySelectorAll('.uk-slider-items li');
-function beforeAfter() {
-	carouselItems?.forEach((item) => {
-		if (item.classList.contains('uk-active')) {
-			item.querySelector('.compare').style.width = item.querySelector('.slider').value + '%';
-		}
+	viewers.forEach((element) => {
+		let view = new ImageCompare(element, {
+			controlColor: '#dd983e',
+			controlShadow: false,
+			addCircle: true,
+			addCircleBlur: true, // default
+			hoverStart: true,
+		}).mount();
 	});
-}
+});

@@ -12,6 +12,9 @@
 
 		<link rel="stylesheet" href="./css/style.css" />
 
+		<link rel="stylesheet" href="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.css" />
+		<script src="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.js"></script>
+
 		<title>Document</title>
 	</head>
 	<body>
@@ -134,10 +137,10 @@
 										<div class="result__item uk-child-width-1-1 uk-child-width-1-2@s" uk-grid>
 											<div class="">
 												<div class="image-column">
-													<figure style="background-image: url('./img/unsplash_NvqYkDPE0Rw.png')">
-														<div class="compare" style="background-image: url('./img/unsplash_FV3GConVSss.png')"></div>
-													</figure>
-													<input oninput="beforeAfter()" onchange="beforeAfter()" type="range" min="0" max="100" value="50" class="slider" />
+													<div class="compare-images">
+														<img src="./img/unsplash_FV3GConVSss.png" alt="BEFORE" />
+														<img src="./img/unsplash_umAXneH4GhA.png" alt="AFTER" />
+													</div>
 												</div>
 											</div>
 											<div class="content-column">
@@ -158,10 +161,10 @@
 										<div class="result__item uk-child-width-1-1 uk-child-width-1-2@s" uk-grid>
 											<div class="">
 												<div class="image-column">
-													<figure style="background-image: url('./img/unsplash_NvqYkDPE0Rw.png')">
-														<div class="compare" style="background-image: url('./img/unsplash_FV3GConVSss.png')"></div>
-													</figure>
-													<input oninput="beforeAfter()" onchange="beforeAfter()" type="range" min="0" max="100" value="50" class="slider" />
+													<div class="compare-images">
+														<img src="./img/unsplash_FV3GConVSss.png" alt="BEFORE" />
+														<img src="./img/unsplash_umAXneH4GhA.png" alt="AFTER" />
+													</div>
 												</div>
 											</div>
 											<div class="content-column">
@@ -182,10 +185,10 @@
 										<div class="result__item uk-child-width-1-1 uk-child-width-1-2@s" uk-grid>
 											<div class="">
 												<div class="image-column">
-													<figure style="background-image: url('./img/unsplash_NvqYkDPE0Rw.png')">
-														<div class="compare" style="background-image: url('./img/unsplash_FV3GConVSss.png')"></div>
-													</figure>
-													<input oninput="beforeAfter()" onchange="beforeAfter()" type="range" min="0" max="100" value="50" class="slider" />
+													<div class="compare-images">
+														<img src="./img/unsplash_FV3GConVSss.png" alt="BEFORE" />
+														<img src="./img/unsplash_umAXneH4GhA.png" alt="AFTER" />
+													</div>
 												</div>
 											</div>
 											<div class="content-column">
@@ -430,7 +433,6 @@
 
 		<script src="https://cdn.jsdelivr.net/npm/uikit@3.13.4/dist/js/uikit.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/uikit@3.13.4/dist/js/uikit-icons.min.js"></script>
-		<script></script>
 		<script src="./js/script.js"></script>
 	</body>
 </html>
