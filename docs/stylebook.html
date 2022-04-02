@@ -9,7 +9,8 @@
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
 
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.4/dist/css/uikit.min.css" />
-
+		<link rel="stylesheet" href="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.css" />
+		<script src="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.js"></script>
 		<link rel="stylesheet" href="./css/style.css" />
 
 		<title>Document</title>
@@ -163,11 +164,17 @@
 																			<div class="uk-width-1-1">
 																				<span class="slider-pre-title">for house</span>
 																				<h2 class="slider-title slider-title--dark">KEK1</h2>
-																				<p class="slider-text slider-text--dark">
+																				<p class="slider-text slider-text--dark text">
 																					The coastal style is defined by seaside elements, plants and colors. The sand, driftwood, rope, shells, and
-																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that’s
-																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ...
-																					<span class="read-more">Read more</span>
+																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that's
+																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ,
+																					<span class="dots">...</span>
+																					<span class="more-text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda quaerat soluta voluptate nihil
+																						 mollitia nobis neque unde rem accusamus, quisquam provident. Eum natus omnis nihil aut numquam 
+																						 fugit labore. Blanditiis.
+																					</span>
+																				</p>
+																				<span class="more-text-btn read-more">Show More</span>
 																				</p>
 																			</div>
 																		</div>
@@ -176,18 +183,10 @@
 
 																<div class="uk-width-1-2@s uk-width-1-1">
 																	<div class="image-column">
-																		<figure style="background-image: url('./img/unsplash_NvqYkDPE0Rw.png')">
-																			<div class="compare" style="background-image: url('./img/unsplash_FV3GConVSss.png')"></div>
-																		</figure>
-																		<input
-																			oninput="beforeAfter()"
-																			onchange="beforeAfter()"
-																			type="range"
-																			min="0"
-																			max="100"
-																			value="50"
-																			class="slider"
-																		/>
+																		<div class="compare-images">
+																			<img src="./img/unsplash_FV3GConVSss.png" alt="BEFORE" />
+																			<img src="./img/unsplash_umAXneH4GhA.png" alt="AFTER" />
+																		</div>
 																	</div>
 																</div>
 															</div>
@@ -203,12 +202,18 @@
 																		<div class="uk-flex uk-flex-between uk-flex-column uk-height-1-1">
 																			<div class="uk-width-1-1">
 																				<span class="slider-pre-title">for house</span>
-																				<h2 class="slider-title slider-title--dark">KEK2</h2>
-																				<p class="slider-text slider-text--dark">
+																				<h2 class="slider-title slider-title--dark">KEK1</h2>
+																				<p class="slider-text slider-text--dark text">
 																					The coastal style is defined by seaside elements, plants and colors. The sand, driftwood, rope, shells, and
-																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that’s
-																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ...
-																					<span class="read-more">Read more</span>
+																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that's
+																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ,
+																					<span class="dots">...</span>
+																					<span class="more-text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda quaerat soluta voluptate nihil
+																						 mollitia nobis neque unde rem accusamus, quisquam provident. Eum natus omnis nihil aut numquam 
+																						 fugit labore. Blanditiis.
+																					</span>
+																				</p>
+																				<span class="more-text-btn read-more">Show More</span>
 																				</p>
 																			</div>
 																		</div>
@@ -217,114 +222,10 @@
 
 																<div class="uk-width-1-2@s uk-width-1-1">
 																	<div class="image-column">
-																		<figure style="background-image: url('./img/unsplash_NvqYkDPE0Rw.png')">
-																			<div class="compare" style="background-image: url('./img/unsplash_FV3GConVSss.png')"></div>
-																		</figure>
-																		<input
-																			oninput="beforeAfter()"
-																			onchange="beforeAfter()"
-																			type="range"
-																			min="0"
-																			max="100"
-																			value="50"
-																			class="slider"
-																		/>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</li>
-											</ul>
-											<div class="uk-container slide-caption slide-caption--dark">
-												<div uk-grid class="uk-flex-right">
-													<div class="uk-flex uk-flex-between uk-flex-middle uk-width-1-2@s uk-width-1-1">
-														<div class="slide-counter counter"><span class="active-slide"></span> / <span class="number-slides"></span></div>
-														<div class="slide-counter scroll">Drag</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div uk-slider class="custom-slider__slider">
-											<ul class="uk-slider-items uk-child-width-1-1">
-												<li>
-													<div class="item">
-														<div class="uk-container">
-															<div class="custom-slider__item" uk-grid>
-																<div class="uk-width-1-2@s uk-width-1-1">
-																	<div class="content-column uk-height-1-1">
-																		<div class="uk-flex uk-flex-between uk-flex-column uk-height-1-1">
-																			<div class="uk-width-1-1">
-																				<span class="slider-pre-title">for house</span>
-																				<h2 class="slider-title slider-title--dark">LOL1</h2>
-																				<p class="slider-text slider-text--dark">
-																					The coastal style is defined by seaside elements, plants and colors. The sand, driftwood, rope, shells, and
-																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that’s
-																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ...
-																					<span class="read-more">Read more</span>
-																				</p>
-																			</div>
+																		<div class="compare-images">
+																			<img src="./img/unsplash_FV3GConVSss.png" alt="BEFORE" />
+																			<img src="./img/unsplash_umAXneH4GhA.png" alt="AFTER" />
 																		</div>
-																	</div>
-																</div>
-
-																<div class="uk-width-1-2@s uk-width-1-1">
-																	<div class="image-column">
-																		<figure style="background-image: url('./img/unsplash_NvqYkDPE0Rw.png')">
-																			<div class="compare" style="background-image: url('./img/unsplash_FV3GConVSss.png')"></div>
-																		</figure>
-																		<input
-																			oninput="beforeAfter()"
-																			onchange="beforeAfter()"
-																			type="range"
-																			min="0"
-																			max="100"
-																			value="50"
-																			class="slider"
-																		/>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</li>
-												<li>
-													<div class="item">
-														<div class="uk-container">
-															<div class="custom-slider__item" uk-grid>
-																<div class="uk-width-1-2@s uk-width-1-1">
-																	<div class="content-column uk-height-1-1">
-																		<div class="uk-flex uk-flex-between uk-flex-column uk-height-1-1">
-																			<div class="uk-width-1-1">
-																				<span class="slider-pre-title">for house</span>
-																				<h2 class="slider-title slider-title--dark">LOL2</h2>
-																				<p class="slider-text slider-text--dark">
-																					The coastal style is defined by seaside elements, plants and colors. The sand, driftwood, rope, shells, and
-																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that’s
-																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ...
-																					<span class="read-more">Read more</span>
-																				</p>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-
-																<div class="uk-width-1-2@s uk-width-1-1">
-																	<div class="image-column">
-																		<figure style="background-image: url('./img/unsplash_NvqYkDPE0Rw.png')">
-																			<div class="compare" style="background-image: url('./img/unsplash_FV3GConVSss.png')"></div>
-																		</figure>
-																		<input
-																			oninput="beforeAfter()"
-																			onchange="beforeAfter()"
-																			type="range"
-																			min="0"
-																			max="100"
-																			value="50"
-																			class="slider"
-																		/>
 																	</div>
 																</div>
 															</div>
@@ -354,12 +255,18 @@
 																		<div class="uk-flex uk-flex-between uk-flex-column uk-height-1-1">
 																			<div class="uk-width-1-1">
 																				<span class="slider-pre-title">for house</span>
-																				<h2 class="slider-title slider-title--dark">Azizazizu1</h2>
-																				<p class="slider-text slider-text--dark">
+																				<h2 class="slider-title slider-title--dark">KEK1</h2>
+																				<p class="slider-text slider-text--dark text">
 																					The coastal style is defined by seaside elements, plants and colors. The sand, driftwood, rope, shells, and
-																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that’s
-																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ...
-																					<span class="read-more">Read more</span>
+																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that's
+																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ,
+																					<span class="dots">...</span>
+																					<span class="more-text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda quaerat soluta voluptate nihil
+																						 mollitia nobis neque unde rem accusamus, quisquam provident. Eum natus omnis nihil aut numquam 
+																						 fugit labore. Blanditiis.
+																					</span>
+																				</p>
+																				<span class="more-text-btn read-more">Show More</span>
 																				</p>
 																			</div>
 																		</div>
@@ -368,18 +275,10 @@
 
 																<div class="uk-width-1-2@s uk-width-1-1">
 																	<div class="image-column">
-																		<figure style="background-image: url('./img/unsplash_NvqYkDPE0Rw.png')">
-																			<div class="compare" style="background-image: url('./img/unsplash_FV3GConVSss.png')"></div>
-																		</figure>
-																		<input
-																			oninput="beforeAfter()"
-																			onchange="beforeAfter()"
-																			type="range"
-																			min="0"
-																			max="100"
-																			value="50"
-																			class="slider"
-																		/>
+																		<div class="compare-images">
+																			<img src="./img/unsplash_FV3GConVSss.png" alt="BEFORE" />
+																			<img src="./img/unsplash_umAXneH4GhA.png" alt="AFTER" />
+																		</div>
 																	</div>
 																</div>
 															</div>
@@ -395,12 +294,18 @@
 																		<div class="uk-flex uk-flex-between uk-flex-column uk-height-1-1">
 																			<div class="uk-width-1-1">
 																				<span class="slider-pre-title">for house</span>
-																				<h2 class="slider-title slider-title--dark">Azizazizu2</h2>
-																				<p class="slider-text slider-text--dark">
+																				<h2 class="slider-title slider-title--dark">KEK1</h2>
+																				<p class="slider-text slider-text--dark text">
 																					The coastal style is defined by seaside elements, plants and colors. The sand, driftwood, rope, shells, and
-																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that’s
-																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ...
-																					<span class="read-more">Read more</span>
+																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that's
+																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ,
+																					<span class="dots">...</span>
+																					<span class="more-text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda quaerat soluta voluptate nihil
+																						 mollitia nobis neque unde rem accusamus, quisquam provident. Eum natus omnis nihil aut numquam 
+																						 fugit labore. Blanditiis.
+																					</span>
+																				</p>
+																				<span class="more-text-btn read-more">Show More</span>
 																				</p>
 																			</div>
 																		</div>
@@ -409,18 +314,102 @@
 
 																<div class="uk-width-1-2@s uk-width-1-1">
 																	<div class="image-column">
-																		<figure style="background-image: url('./img/unsplash_NvqYkDPE0Rw.png')">
-																			<div class="compare" style="background-image: url('./img/unsplash_FV3GConVSss.png')"></div>
-																		</figure>
-																		<input
-																			oninput="beforeAfter()"
-																			onchange="beforeAfter()"
-																			type="range"
-																			min="0"
-																			max="100"
-																			value="50"
-																			class="slider"
-																		/>
+																		<div class="compare-images">
+																			<img src="./img/unsplash_FV3GConVSss.png" alt="BEFORE" />
+																			<img src="./img/unsplash_umAXneH4GhA.png" alt="AFTER" />
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<div class="uk-container slide-caption slide-caption--dark">
+												<div uk-grid class="uk-flex-right">
+													<div class="uk-flex uk-flex-between uk-flex-middle uk-width-1-2@s uk-width-1-1">
+														<div class="slide-counter counter"><span class="active-slide"></span> / <span class="number-slides"></span></div>
+														<div class="slide-counter scroll">Drag</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div uk-slider class="custom-slider__slider">
+											<ul class="uk-slider-items uk-child-width-1-1">
+												<li>
+													<div class="item">
+														<div class="uk-container">
+															<div class="custom-slider__item" uk-grid>
+																<div class="uk-width-1-2@s uk-width-1-1">
+																	<div class="content-column uk-height-1-1">
+																		<div class="uk-flex uk-flex-between uk-flex-column uk-height-1-1">
+																			<div class="uk-width-1-1">
+																				<span class="slider-pre-title">for house</span>
+																				<h2 class="slider-title slider-title--dark">KEK1</h2>
+																				<p class="slider-text slider-text--dark text">
+																					The coastal style is defined by seaside elements, plants and colors. The sand, driftwood, rope, shells, and
+																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that's
+																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ,
+																					<span class="dots">...</span>
+																					<span class="more-text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda quaerat soluta voluptate nihil
+																						 mollitia nobis neque unde rem accusamus, quisquam provident. Eum natus omnis nihil aut numquam 
+																						 fugit labore. Blanditiis.
+																					</span>
+																				</p>
+																				<span class="more-text-btn read-more">Show More</span>
+																				</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="uk-width-1-2@s uk-width-1-1">
+																	<div class="image-column">
+																		<div class="compare-images">
+																			<img src="./img/unsplash_FV3GConVSss.png" alt="BEFORE" />
+																			<img src="./img/unsplash_umAXneH4GhA.png" alt="AFTER" />
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="item">
+														<div class="uk-container">
+															<div class="custom-slider__item" uk-grid>
+																<div class="uk-width-1-2@s uk-width-1-1">
+																	<div class="content-column uk-height-1-1">
+																		<div class="uk-flex uk-flex-between uk-flex-column uk-height-1-1">
+																			<div class="uk-width-1-1">
+																				<span class="slider-pre-title">for house</span>
+																				<h2 class="slider-title slider-title--dark">KEK1</h2>
+																				<p class="slider-text slider-text--dark text">
+																					The coastal style is defined by seaside elements, plants and colors. The sand, driftwood, rope, shells, and
+																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that's
+																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ,
+																					<span class="dots">...</span>
+																					<span class="more-text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda quaerat soluta voluptate nihil
+																						 mollitia nobis neque unde rem accusamus, quisquam provident. Eum natus omnis nihil aut numquam 
+																						 fugit labore. Blanditiis.
+																					</span>
+																				</p>
+																				<span class="more-text-btn read-more">Show More</span>
+																				</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="uk-width-1-2@s uk-width-1-1">
+																	<div class="image-column">
+																		<div class="compare-images">
+																			<img src="./img/unsplash_FV3GConVSss.png" alt="BEFORE" />
+																			<img src="./img/unsplash_umAXneH4GhA.png" alt="AFTER" />
+																		</div>
 																	</div>
 																</div>
 															</div>
@@ -497,11 +486,17 @@
 																			<div class="uk-width-1-1">
 																				<span class="slider-pre-title">for house</span>
 																				<h2 class="slider-title slider-title--dark">KEK1</h2>
-																				<p class="slider-text slider-text--dark">
+																				<p class="slider-text slider-text--dark text">
 																					The coastal style is defined by seaside elements, plants and colors. The sand, driftwood, rope, shells, and
-																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that’s
-																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ...
-																					<span class="read-more">Read more</span>
+																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that's
+																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ,
+																					<span class="dots">...</span>
+																					<span class="more-text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda quaerat soluta voluptate nihil
+																						 mollitia nobis neque unde rem accusamus, quisquam provident. Eum natus omnis nihil aut numquam 
+																						 fugit labore. Blanditiis.
+																					</span>
+																				</p>
+																				<span class="more-text-btn read-more">Show More</span>
 																				</p>
 																			</div>
 																		</div>
@@ -510,18 +505,10 @@
 
 																<div class="uk-width-1-2@s uk-width-1-1">
 																	<div class="image-column">
-																		<figure style="background-image: url('./img/unsplash_NvqYkDPE0Rw.png')">
-																			<div class="compare" style="background-image: url('./img/unsplash_FV3GConVSss.png')"></div>
-																		</figure>
-																		<input
-																			oninput="beforeAfter()"
-																			onchange="beforeAfter()"
-																			type="range"
-																			min="0"
-																			max="100"
-																			value="50"
-																			class="slider"
-																		/>
+																		<div class="compare-images">
+																			<img src="./img/unsplash_FV3GConVSss.png" alt="BEFORE" />
+																			<img src="./img/unsplash_umAXneH4GhA.png" alt="AFTER" />
+																		</div>
 																	</div>
 																</div>
 															</div>
@@ -537,12 +524,18 @@
 																		<div class="uk-flex uk-flex-between uk-flex-column uk-height-1-1">
 																			<div class="uk-width-1-1">
 																				<span class="slider-pre-title">for house</span>
-																				<h2 class="slider-title slider-title--dark">KEK2</h2>
-																				<p class="slider-text slider-text--dark">
+																				<h2 class="slider-title slider-title--dark">KEK1</h2>
+																				<p class="slider-text slider-text--dark text">
 																					The coastal style is defined by seaside elements, plants and colors. The sand, driftwood, rope, shells, and
-																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that’s
-																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ...
-																					<span class="read-more">Read more</span>
+																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that's
+																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ,
+																					<span class="dots">...</span>
+																					<span class="more-text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda quaerat soluta voluptate nihil
+																						 mollitia nobis neque unde rem accusamus, quisquam provident. Eum natus omnis nihil aut numquam 
+																						 fugit labore. Blanditiis.
+																					</span>
+																				</p>
+																				<span class="more-text-btn read-more">Show More</span>
 																				</p>
 																			</div>
 																		</div>
@@ -551,114 +544,10 @@
 
 																<div class="uk-width-1-2@s uk-width-1-1">
 																	<div class="image-column">
-																		<figure style="background-image: url('./img/unsplash_NvqYkDPE0Rw.png')">
-																			<div class="compare" style="background-image: url('./img/unsplash_FV3GConVSss.png')"></div>
-																		</figure>
-																		<input
-																			oninput="beforeAfter()"
-																			onchange="beforeAfter()"
-																			type="range"
-																			min="0"
-																			max="100"
-																			value="50"
-																			class="slider"
-																		/>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</li>
-											</ul>
-											<div class="uk-container slide-caption slide-caption--dark">
-												<div uk-grid class="uk-flex-right">
-													<div class="uk-flex uk-flex-between uk-flex-middle uk-width-1-2@s uk-width-1-1">
-														<div class="slide-counter counter"><span class="active-slide"></span> / <span class="number-slides"></span></div>
-														<div class="slide-counter scroll">Drag</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div uk-slider class="custom-slider__slider">
-											<ul class="uk-slider-items uk-child-width-1-1">
-												<li>
-													<div class="item">
-														<div class="uk-container">
-															<div class="custom-slider__item" uk-grid>
-																<div class="uk-width-1-2@s uk-width-1-1">
-																	<div class="content-column uk-height-1-1">
-																		<div class="uk-flex uk-flex-between uk-flex-column uk-height-1-1">
-																			<div class="uk-width-1-1">
-																				<span class="slider-pre-title">for house</span>
-																				<h2 class="slider-title slider-title--dark">LOL1</h2>
-																				<p class="slider-text slider-text--dark">
-																					The coastal style is defined by seaside elements, plants and colors. The sand, driftwood, rope, shells, and
-																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that’s
-																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ...
-																					<span class="read-more">Read more</span>
-																				</p>
-																			</div>
+																		<div class="compare-images">
+																			<img src="./img/unsplash_FV3GConVSss.png" alt="BEFORE" />
+																			<img src="./img/unsplash_umAXneH4GhA.png" alt="AFTER" />
 																		</div>
-																	</div>
-																</div>
-
-																<div class="uk-width-1-2@s uk-width-1-1">
-																	<div class="image-column">
-																		<figure style="background-image: url('./img/unsplash_NvqYkDPE0Rw.png')">
-																			<div class="compare" style="background-image: url('./img/unsplash_FV3GConVSss.png')"></div>
-																		</figure>
-																		<input
-																			oninput="beforeAfter()"
-																			onchange="beforeAfter()"
-																			type="range"
-																			min="0"
-																			max="100"
-																			value="50"
-																			class="slider"
-																		/>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</li>
-												<li>
-													<div class="item">
-														<div class="uk-container">
-															<div class="custom-slider__item" uk-grid>
-																<div class="uk-width-1-2@s uk-width-1-1">
-																	<div class="content-column uk-height-1-1">
-																		<div class="uk-flex uk-flex-between uk-flex-column uk-height-1-1">
-																			<div class="uk-width-1-1">
-																				<span class="slider-pre-title">for house</span>
-																				<h2 class="slider-title slider-title--dark">LOL2</h2>
-																				<p class="slider-text slider-text--dark">
-																					The coastal style is defined by seaside elements, plants and colors. The sand, driftwood, rope, shells, and
-																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that’s
-																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ...
-																					<span class="read-more">Read more</span>
-																				</p>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-
-																<div class="uk-width-1-2@s uk-width-1-1">
-																	<div class="image-column">
-																		<figure style="background-image: url('./img/unsplash_NvqYkDPE0Rw.png')">
-																			<div class="compare" style="background-image: url('./img/unsplash_FV3GConVSss.png')"></div>
-																		</figure>
-																		<input
-																			oninput="beforeAfter()"
-																			onchange="beforeAfter()"
-																			type="range"
-																			min="0"
-																			max="100"
-																			value="50"
-																			class="slider"
-																		/>
 																	</div>
 																</div>
 															</div>
@@ -688,12 +577,18 @@
 																		<div class="uk-flex uk-flex-between uk-flex-column uk-height-1-1">
 																			<div class="uk-width-1-1">
 																				<span class="slider-pre-title">for house</span>
-																				<h2 class="slider-title slider-title--dark">Azizazizu1</h2>
-																				<p class="slider-text slider-text--dark">
+																				<h2 class="slider-title slider-title--dark">KEK1</h2>
+																				<p class="slider-text slider-text--dark text">
 																					The coastal style is defined by seaside elements, plants and colors. The sand, driftwood, rope, shells, and
-																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that’s
-																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ...
-																					<span class="read-more">Read more</span>
+																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that's
+																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ,
+																					<span class="dots">...</span>
+																					<span class="more-text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda quaerat soluta voluptate nihil
+																						 mollitia nobis neque unde rem accusamus, quisquam provident. Eum natus omnis nihil aut numquam 
+																						 fugit labore. Blanditiis.
+																					</span>
+																				</p>
+																				<span class="more-text-btn read-more">Show More</span>
 																				</p>
 																			</div>
 																		</div>
@@ -702,18 +597,10 @@
 
 																<div class="uk-width-1-2@s uk-width-1-1">
 																	<div class="image-column">
-																		<figure style="background-image: url('./img/unsplash_NvqYkDPE0Rw.png')">
-																			<div class="compare" style="background-image: url('./img/unsplash_FV3GConVSss.png')"></div>
-																		</figure>
-																		<input
-																			oninput="beforeAfter()"
-																			onchange="beforeAfter()"
-																			type="range"
-																			min="0"
-																			max="100"
-																			value="50"
-																			class="slider"
-																		/>
+																		<div class="compare-images">
+																			<img src="./img/unsplash_FV3GConVSss.png" alt="BEFORE" />
+																			<img src="./img/unsplash_umAXneH4GhA.png" alt="AFTER" />
+																		</div>
 																	</div>
 																</div>
 															</div>
@@ -729,12 +616,18 @@
 																		<div class="uk-flex uk-flex-between uk-flex-column uk-height-1-1">
 																			<div class="uk-width-1-1">
 																				<span class="slider-pre-title">for house</span>
-																				<h2 class="slider-title slider-title--dark">Azizazizu2</h2>
-																				<p class="slider-text slider-text--dark">
+																				<h2 class="slider-title slider-title--dark">KEK1</h2>
+																				<p class="slider-text slider-text--dark text">
 																					The coastal style is defined by seaside elements, plants and colors. The sand, driftwood, rope, shells, and
-																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that’s
-																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ...
-																					<span class="read-more">Read more</span>
+																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that's
+																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ,
+																					<span class="dots">...</span>
+																					<span class="more-text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda quaerat soluta voluptate nihil
+																						 mollitia nobis neque unde rem accusamus, quisquam provident. Eum natus omnis nihil aut numquam 
+																						 fugit labore. Blanditiis.
+																					</span>
+																				</p>
+																				<span class="more-text-btn read-more">Show More</span>
 																				</p>
 																			</div>
 																		</div>
@@ -743,18 +636,102 @@
 
 																<div class="uk-width-1-2@s uk-width-1-1">
 																	<div class="image-column">
-																		<figure style="background-image: url('./img/unsplash_NvqYkDPE0Rw.png')">
-																			<div class="compare" style="background-image: url('./img/unsplash_FV3GConVSss.png')"></div>
-																		</figure>
-																		<input
-																			oninput="beforeAfter()"
-																			onchange="beforeAfter()"
-																			type="range"
-																			min="0"
-																			max="100"
-																			value="50"
-																			class="slider"
-																		/>
+																		<div class="compare-images">
+																			<img src="./img/unsplash_FV3GConVSss.png" alt="BEFORE" />
+																			<img src="./img/unsplash_umAXneH4GhA.png" alt="AFTER" />
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<div class="uk-container slide-caption slide-caption--dark">
+												<div uk-grid class="uk-flex-right">
+													<div class="uk-flex uk-flex-between uk-flex-middle uk-width-1-2@s uk-width-1-1">
+														<div class="slide-counter counter"><span class="active-slide"></span> / <span class="number-slides"></span></div>
+														<div class="slide-counter scroll">Drag</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div uk-slider class="custom-slider__slider">
+											<ul class="uk-slider-items uk-child-width-1-1">
+												<li>
+													<div class="item">
+														<div class="uk-container">
+															<div class="custom-slider__item" uk-grid>
+																<div class="uk-width-1-2@s uk-width-1-1">
+																	<div class="content-column uk-height-1-1">
+																		<div class="uk-flex uk-flex-between uk-flex-column uk-height-1-1">
+																			<div class="uk-width-1-1">
+																				<span class="slider-pre-title">for house</span>
+																				<h2 class="slider-title slider-title--dark">KEK1</h2>
+																				<p class="slider-text slider-text--dark text">
+																					The coastal style is defined by seaside elements, plants and colors. The sand, driftwood, rope, shells, and
+																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that's
+																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ,
+																					<span class="dots">...</span>
+																					<span class="more-text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda quaerat soluta voluptate nihil
+																						 mollitia nobis neque unde rem accusamus, quisquam provident. Eum natus omnis nihil aut numquam 
+																						 fugit labore. Blanditiis.
+																					</span>
+																				</p>
+																				<span class="more-text-btn read-more">Show More</span>
+																				</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="uk-width-1-2@s uk-width-1-1">
+																	<div class="image-column">
+																		<div class="compare-images">
+																			<img src="./img/unsplash_FV3GConVSss.png" alt="BEFORE" />
+																			<img src="./img/unsplash_umAXneH4GhA.png" alt="AFTER" />
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="item">
+														<div class="uk-container">
+															<div class="custom-slider__item" uk-grid>
+																<div class="uk-width-1-2@s uk-width-1-1">
+																	<div class="content-column uk-height-1-1">
+																		<div class="uk-flex uk-flex-between uk-flex-column uk-height-1-1">
+																			<div class="uk-width-1-1">
+																				<span class="slider-pre-title">for house</span>
+																				<h2 class="slider-title slider-title--dark">KEK1</h2>
+																				<p class="slider-text slider-text--dark text">
+																					The coastal style is defined by seaside elements, plants and colors. The sand, driftwood, rope, shells, and
+																					the light reflecting off the water create a soothing ambiance. Incorporate those traits in a way that's
+																					clear and simple. The goal is to incorporate the sense of relaxation and beachy mood indoors without ,
+																					<span class="dots">...</span>
+																					<span class="more-text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda quaerat soluta voluptate nihil
+																						 mollitia nobis neque unde rem accusamus, quisquam provident. Eum natus omnis nihil aut numquam 
+																						 fugit labore. Blanditiis.
+																					</span>
+																				</p>
+																				<span class="more-text-btn read-more">Show More</span>
+																				</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="uk-width-1-2@s uk-width-1-1">
+																	<div class="image-column">
+																		<div class="compare-images">
+																			<img src="./img/unsplash_FV3GConVSss.png" alt="BEFORE" />
+																			<img src="./img/unsplash_umAXneH4GhA.png" alt="AFTER" />
+																		</div>
 																	</div>
 																</div>
 															</div>

@@ -12,3 +12,18 @@
 	display: flex;
 	flex-direction: column-reverse;
 }
+
+.text {
+	display: inline;
+}
+.more-text {
+	display: none;
+}
+
+.text.show-more .dots {
+	display: none;
+}
+
+.text.show-more .more-text {
+	display: inline;
+}

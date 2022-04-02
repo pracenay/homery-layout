@@ -690,6 +690,22 @@ footer {
           flex-direction: column-reverse;
 }
 
+.text {
+  display: inline;
+}
+
+.more-text {
+  display: none;
+}
+
+.text.show-more .dots {
+  display: none;
+}
+
+.text.show-more .more-text {
+  display: inline;
+}
+
 .back-to-top-section {
   padding: 42px 0;
 }
@@ -1027,6 +1043,7 @@ body {
 
 .read-more {
   color: #dd983e;
+  cursor: pointer;
 }
 
 a.btn {
