@@ -46,37 +46,10 @@ sliders?.forEach((slider) => {
 			controlShadow: false,
 			addCircle: true,
 			addCircleBlur: true, // default
-			hoverStart: true,
 		}).mount();
 	});
 
-	// viewers.addEventListener('mousedown', () => {
-	// 	slider.style['pointer-events'] = 'none';
-	// 	UIkit.slider(slider, {
-	// 		draggable: false,
-	// 	});
-	// });
-	// viewers.forEach((view) => {
-	// 	let isMouseHover = false;
-	// 	view.addEventListener(
-	// 		'mouseleave',
-	// 		function (event) {
-	// 			isMouseHover = false;
-	// 			UIkit.slider(slider, {
-	// 				draggable: true,
-	// 			});
-	// 		},
-	// 		false
-	// 	);
-	// 	view.addEventListener(
-	// 		'mouseover',
-	// 		function (event) {
-	// 			isMouseHover = true;
-	// 			UIkit.slider(slider, {
-	// 				draggable: false,
-	// 			});
-	// 		},
-	// 		false
-	// 	);
-	// });
+	UIkit.slider(slider, {
+		draggable: false,
+	});
 });
