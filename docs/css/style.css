@@ -758,6 +758,9 @@ footer {
 .custom-slider__slider-nav a svg polyline {
   stroke-width: 2px;
 }
+.custom-slider__slider-nav--dark .custom-slider__arrow {
+  color: #141414;
+}
 .custom-slider__arrow {
   display: block;
   color: #fff;
@@ -768,7 +771,7 @@ footer {
   padding-left: 0;
 }
 .custom-slider__list__item {
-  padding: 64px 0;
+  padding: 24px 0 64px;
   border-bottom: 1px solid #141414;
 }
 .custom-slider__list__item:first-child {

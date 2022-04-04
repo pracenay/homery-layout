@@ -8,6 +8,11 @@
 		a svg polyline {
 			stroke-width: 2px;
 		}
+		&--dark {
+			.custom-slider__arrow {
+				color: #141414;
+			}
+		}
 	}
 	&__arrow {
 		display: block;
@@ -18,7 +23,7 @@
 		list-style: none;
 		padding-left: 0;
 		&__item {
-			padding: 64px 0;
+			padding: 24px 0 64px;
 			border-bottom: 1px solid #141414;
 			&:first-child {
 				border-top: 1px solid #141414;

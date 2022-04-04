@@ -27,16 +27,21 @@ sliders?.forEach((slider) => {
 		length.innerText = sliderLength;
 	});
 
-	const readMoreBtn = slider.querySelector('.more-text-btn');
+	const sliderItem = slider.querySelectorAll('.uk-slider-items .item');
+	console.log(sliderItem);
 
-	const text = slider.querySelector('.slider-text');
-	readMoreBtn?.addEventListener('click', () => {
-		text.classList.toggle('show-more');
-		if (readMoreBtn.innerText === 'Show More') {
-			readMoreBtn.innerText = 'Show Less';
-		} else {
-			readMoreBtn.innerText = 'Show More';
-		}
+	sliderItem.forEach((item) => {
+		const readMoreBtn = item.querySelector('.more-text-btn');
+
+		const text = item.querySelector('.slider-text');
+		readMoreBtn?.addEventListener('click', () => {
+			text.classList.toggle('show-more');
+			if (readMoreBtn.innerText === 'Show More') {
+				readMoreBtn.innerText = 'Show Less';
+			} else {
+				readMoreBtn.innerText = 'Show More';
+			}
+		});
 	});
 
 	const viewers = document.querySelectorAll('.compare-images');
